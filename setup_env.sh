@@ -1,29 +1,46 @@
 #!/bin/bash
 # ==============================================================
 # Dual Robot Navigation — Environment Configuration
-# Source this file before every terminal session:
+# Source this in EVERY terminal before running any launch file:
 #   source ~/dual_robot_ws/setup_env.sh
 # ==============================================================
 
+# ── Detect actual workspace root from this script's location ──
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WS_ROOT="$SCRIPT_DIR"
+
+echo "[ENV] Workspace root: $WS_ROOT"
+
+# ── ROS2 base ─────────────────────────────────────────────────
 source /opt/ros/humble/setup.bash
 
-# Only source the workspace install if it exists (i.e. after first build)
-INSTALL_SETUP=~/dual_robot_ws/install/setup.bash
+# ── Workspace install — only after first colcon build ─────────
+INSTALL_SETUP="$WS_ROOT/install/setup.bash"
 if [ -f "$INSTALL_SETUP" ]; then
-  source "$INSTALL_SETUP"
+    source "$INSTALL_SETUP"
+    echo "[ENV] Workspace sourced: $INSTALL_SETUP"
 else
-  echo "[WARN] Workspace not built yet. Run colcon build first."
+    echo "[WARN] Workspace not built yet. Run:"
+    echo "       cd $WS_ROOT && colcon build --symlink-install"
 fi
 
+# ── TurtleBot3 ────────────────────────────────────────────────
 export TURTLEBOT3_MODEL=waffle_pi
+
+# ── DDS ───────────────────────────────────────────────────────
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export ROS_DOMAIN_ID=0
 export ROS_LOCALHOST_ONLY=0
 
-# CycloneDDS config — only set after the workspace is built
+# ── CycloneDDS config (only if workspace is built) ────────────
 if [ -f "$INSTALL_SETUP" ]; then
-  export CYCLONEDDS_URI=file://$(ros2 pkg prefix dual_robot_nav)/share/dual_robot_nav/config/cyclonedds.xml
+    CYCLONE_XML="$(ros2 pkg prefix dual_robot_nav 2>/dev/null)/share/dual_robot_nav/config/cyclonedds.xml"
+    if [ -f "$CYCLONE_XML" ]; then
+        export CYCLONEDDS_URI="file://$CYCLONE_XML"
+        echo "[ENV] CycloneDDS config: $CYCLONE_XML"
+    else
+        echo "[WARN] cyclonedds.xml not found at expected path: $CYCLONE_XML"
+    fi
 fi
 
-echo "[ENV] Dual robot environment configured."
-echo "      RMW: $RMW_IMPLEMENTATION | DOMAIN: $ROS_DOMAIN_ID | MODEL: $TURTLEBOT3_MODEL"
+echo "[ENV] RMW=$RMW_IMPLEMENTATION | DOMAIN=$ROS_DOMAIN_ID | MODEL=$TURTLEBOT3_MODEL"
