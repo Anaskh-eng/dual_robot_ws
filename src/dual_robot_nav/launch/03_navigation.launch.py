@@ -1,14 +1,31 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import GroupAction, IncludeLaunchDescription, TimerAction
+from launch.actions import DeclareLaunchArgument, GroupAction, IncludeLaunchDescription, TimerAction
+from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node, PushRosNamespace
+from launch_ros.descriptions import ParameterFile
+from nav2_common.launch import RewrittenYaml
 
 
-def _nav2_group(namespace, params_file, map_yaml, rviz_config):
+def _nav2_group(namespace, params_file, map_yaml, rviz_config, rviz_enabled):
 
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
+    tf_remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
+    configured_localization_params = ParameterFile(
+        RewrittenYaml(
+            source_file=params_file,
+            root_key=namespace,
+            param_rewrites={
+                'use_sim_time': 'true',
+                'yaml_filename': map_yaml,
+            },
+            convert_types=True,
+        ),
+        allow_substs=True,
+    )
 
     return GroupAction([
         PushRosNamespace(namespace),
@@ -18,11 +35,8 @@ def _nav2_group(namespace, params_file, map_yaml, rviz_config):
             executable='map_server',
             name='map_server',
             output='screen',
-            parameters=[{
-                'use_sim_time': True,
-                'yaml_filename': map_yaml,
-                'frame_id': 'map',
-            }]
+            remappings=tf_remappings,
+            parameters=[configured_localization_params]
         ),
 
         Node(
@@ -30,7 +44,8 @@ def _nav2_group(namespace, params_file, map_yaml, rviz_config):
             executable='amcl',
             name='amcl',
             output='screen',
-            parameters=[params_file, {'use_sim_time': True}]
+            remappings=tf_remappings,
+            parameters=[configured_localization_params]
         ),
 
         Node(
@@ -38,6 +53,7 @@ def _nav2_group(namespace, params_file, map_yaml, rviz_config):
             executable='lifecycle_manager',
             name='lifecycle_manager_localization',
             output='screen',
+            remappings=tf_remappings,
             parameters=[{
                 'use_sim_time': True,
                 'autostart': True,
@@ -65,6 +81,8 @@ def _nav2_group(namespace, params_file, map_yaml, rviz_config):
             executable='rviz2',
             name='rviz2',
             output='screen',
+            condition=IfCondition(rviz_enabled),
+            remappings=tf_remappings,
             arguments=['-d', rviz_config],
             parameters=[{'use_sim_time': True}]
         ),
@@ -75,16 +93,23 @@ def generate_launch_description():
 
     pkg_dir = get_package_share_directory('dual_robot_nav')
 
+    rviz_arg = DeclareLaunchArgument(
+        'rviz',
+        default_value='true',
+        description='Launch one RViz2 window per robot.'
+    )
+    rviz_enabled = LaunchConfiguration('rviz')
+
     map_yaml     = os.path.join(pkg_dir, 'maps',   'fms_layout2.yaml')
     params_tb3_1 = os.path.join(pkg_dir, 'config', 'nav2_params_tb3_1.yaml')
     params_tb3_2 = os.path.join(pkg_dir, 'config', 'nav2_params_tb3_2.yaml')
     rviz_tb3_1   = os.path.join(pkg_dir, 'rviz',   'tb3_1_nav.rviz')
     rviz_tb3_2   = os.path.join(pkg_dir, 'rviz',   'tb3_2_nav.rviz')
 
-    nav_tb3_1 = _nav2_group('TB3_1', params_tb3_1, map_yaml, rviz_tb3_1)
+    nav_tb3_1 = _nav2_group('TB3_1', params_tb3_1, map_yaml, rviz_tb3_1, rviz_enabled)
     nav_tb3_2 = TimerAction(
         period=5.0,
-        actions=[_nav2_group('TB3_2', params_tb3_2, map_yaml, rviz_tb3_2)]
+        actions=[_nav2_group('TB3_2', params_tb3_2, map_yaml, rviz_tb3_2, rviz_enabled)]
     )
 
-    return LaunchDescription([nav_tb3_1, nav_tb3_2])
+    return LaunchDescription([rviz_arg, nav_tb3_1, nav_tb3_2])

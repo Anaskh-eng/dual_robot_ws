@@ -27,6 +27,14 @@ fi
 # ── TurtleBot3 ────────────────────────────────────────────────
 export TURTLEBOT3_MODEL=waffle_pi
 
+# Gazebo resolves TurtleBot3 mesh URIs such as model://turtlebot3_common
+# through GAZEBO_MODEL_PATH.
+TB3_GAZEBO_MODELS="/opt/ros/humble/share/turtlebot3_gazebo/models"
+case ":${GAZEBO_MODEL_PATH:-}:" in
+    *":$TB3_GAZEBO_MODELS:"*) ;;
+    *) export GAZEBO_MODEL_PATH="$TB3_GAZEBO_MODELS:${GAZEBO_MODEL_PATH:-}" ;;
+esac
+
 # ── DDS ───────────────────────────────────────────────────────
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export ROS_DOMAIN_ID=0
@@ -43,4 +51,5 @@ if [ -f "$INSTALL_SETUP" ]; then
     fi
 fi
 
+echo "[ENV] Gazebo models: $TB3_GAZEBO_MODELS"
 echo "[ENV] RMW=$RMW_IMPLEMENTATION | DOMAIN=$ROS_DOMAIN_ID | MODEL=$TURTLEBOT3_MODEL"

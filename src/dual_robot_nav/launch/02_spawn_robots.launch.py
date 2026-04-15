@@ -1,20 +1,22 @@
 """
 Launch File: 02_spawn_robots.launch.py
 
-Fix: turtlebot3_waffle_pi.urdf in Humble's turtlebot3_gazebo is plain URDF
-(no xacro namespace argument). TF frame uniqueness is achieved via:
-  - frame_prefix in robot_state_publisher  → prefixes all TF frames
-  - Gazebo robot_namespace                 → prefixes all Gazebo topics
+Spawns two TurtleBot3 Waffle Pi robots into Gazebo.
+
+The URDF is still used by robot_state_publisher for TF and RViz, but Gazebo
+must spawn from the TurtleBot3 SDF model because that file contains the ROS
+plugins for cmd_vel, odom, scan, and joint_states.
 """
 
 import os
+import xml.etree.ElementTree as ET
+
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import (DeclareLaunchArgument, GroupAction,
-                             TimerAction, RegisterEventHandler, LogInfo)
+from launch.actions import DeclareLaunchArgument, RegisterEventHandler, LogInfo
 from launch.event_handlers import OnProcessExit
 from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import Node, PushRosNamespace
+from launch_ros.actions import Node
 
 
 def get_urdf_path() -> str:
@@ -36,6 +38,52 @@ def get_robot_description() -> str:
         return f.read()
 
 
+def get_sdf_path() -> str:
+    """Find and return the TB3 Waffle Pi SDF path with validation."""
+    pkg = get_package_share_directory('turtlebot3_gazebo')
+    sdf = os.path.join(pkg, 'models', 'turtlebot3_waffle_pi', 'model.sdf')
+    if not os.path.isfile(sdf):
+        raise FileNotFoundError(f"SDF not found: {sdf}")
+    print(f"[SPAWN] Using Gazebo SDF: {sdf}")
+    return sdf
+
+
+def make_robot_sdf(namespace: str, source_sdf: str) -> str:
+    """Create a namespaced copy of the TurtleBot3 SDF for Gazebo plugins."""
+    output_dir = '/tmp/dual_robot_nav_sdf'
+    os.makedirs(output_dir, exist_ok=True)
+
+    output_sdf = os.path.join(output_dir, f'{namespace}.sdf')
+    tree = ET.parse(source_sdf)
+    root = tree.getroot()
+
+    for odom_frame_tag in root.iter('odometry_frame'):
+        odom_frame_tag.text = f'{namespace}/odom'
+
+    for base_frame_tag in root.iter('robot_base_frame'):
+        base_frame_tag.text = f'{namespace}/base_footprint'
+
+    for scan_frame_tag in root.iter('frame_name'):
+        scan_frame_tag.text = f'{namespace}/base_scan'
+
+    for ros_tag in root.iter('ros'):
+        existing = {
+            remapping.text.strip()
+            for remapping in ros_tag.findall('remapping')
+            if remapping.text
+        }
+        for remap in ('/tf:=tf', '/tf_static:=tf_static'):
+            if remap not in existing:
+                remapping_tag = ET.SubElement(ros_tag, 'remapping')
+                remapping_tag.text = remap
+
+    # spawn_entity.py reads the file into a Python string before parsing it with
+    # lxml, which rejects Unicode strings that contain an XML declaration.
+    tree.write(output_sdf, encoding='unicode', xml_declaration=False)
+    print(f"[SPAWN] Generated namespaced SDF for {namespace}: {output_sdf}")
+    return output_sdf
+
+
 def generate_launch_description():
 
     args = [
@@ -51,6 +99,11 @@ def generate_launch_description():
     # TF uniqueness comes from frame_prefix in robot_state_publisher.
     robot_desc = get_robot_description()
 
+    sdf_path = get_sdf_path()
+    tb3_1_sdf = make_robot_sdf('TB3_1', sdf_path)
+    tb3_2_sdf = make_robot_sdf('TB3_2', sdf_path)
+    tf_remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
+
     # ── Robot 1 ───────────────────────────────────────────────────────────────
     rsp_tb3_1 = Node(
         package='robot_state_publisher',
@@ -58,6 +111,7 @@ def generate_launch_description():
         name='robot_state_publisher',
         namespace='TB3_1',
         output='screen',
+        remappings=tf_remappings,
         parameters=[{
             'robot_description': robot_desc,
             'use_sim_time': True,
@@ -75,7 +129,7 @@ def generate_launch_description():
         arguments=[
             '-entity',          'TB3_1',
             '-robot_namespace', 'TB3_1',
-            '-topic',           '/TB3_1/robot_description',
+            '-file',            tb3_1_sdf,
             '-x',  LaunchConfiguration('tb3_1_x'),
             '-y',  LaunchConfiguration('tb3_1_y'),
             '-z',  '0.01',
@@ -91,6 +145,7 @@ def generate_launch_description():
         name='robot_state_publisher',
         namespace='TB3_2',
         output='screen',
+        remappings=tf_remappings,
         parameters=[{
             'robot_description': robot_desc,
             'use_sim_time': True,
@@ -107,7 +162,7 @@ def generate_launch_description():
         arguments=[
             '-entity',          'TB3_2',
             '-robot_namespace', 'TB3_2',
-            '-topic',           '/TB3_2/robot_description',
+            '-file',            tb3_2_sdf,
             '-x',  LaunchConfiguration('tb3_2_x'),
             '-y',  LaunchConfiguration('tb3_2_y'),
             '-z',  '0.01',

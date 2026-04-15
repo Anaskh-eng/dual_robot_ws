@@ -15,6 +15,7 @@ from launch.substitutions import LaunchConfiguration
 def generate_launch_description():
 
     pkg_dir = get_package_share_directory('dual_robot_nav')
+    tb3_gazebo_dir = get_package_share_directory('turtlebot3_gazebo')
 
     # ── Arguments ──────────────────────────────────────────────────────────────
     world_file_arg = DeclareLaunchArgument(
@@ -33,6 +34,15 @@ def generate_launch_description():
     set_gz_verbosity = SetEnvironmentVariable(
         name='GAZEBO_MODEL_VERBOSITY',
         value='3'
+    )
+    disable_gz_model_database = SetEnvironmentVariable(
+        name='GAZEBO_MODEL_DATABASE_URI',
+        value=''
+    )
+    set_gz_model_path = SetEnvironmentVariable(
+        name='GAZEBO_MODEL_PATH',
+        value=os.path.join(tb3_gazebo_dir, 'models') + ':' +
+              os.environ.get('GAZEBO_MODEL_PATH', '')
     )
 
     # ── Gazebo Server ──────────────────────────────────────────────────────────
@@ -57,6 +67,8 @@ def generate_launch_description():
 
     return LaunchDescription([
         set_gz_verbosity,
+        disable_gz_model_database,
+        set_gz_model_path,
         world_file_arg,
         use_gui_arg,
         gzserver,

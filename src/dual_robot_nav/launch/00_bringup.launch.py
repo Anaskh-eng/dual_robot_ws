@@ -27,6 +27,11 @@ def generate_launch_description():
         description='Launch Gazebo GUI (gzclient).'
     )
 
+    rviz_arg = DeclareLaunchArgument(
+        'rviz', default_value='true',
+        description='Launch RViz2 windows from the navigation launch.'
+    )
+
     # ── Phase 1: Gazebo world (t=0s) ──────────────────────────────────────────
     launch_gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -37,7 +42,7 @@ def generate_launch_description():
 
     # ── Phase 2: Spawn robots (t=5s, after Gazebo is ready) ───────────────────
     launch_spawn = TimerAction(
-        period=5.0,
+        period=12.0,
         actions=[IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(pkg_dir, 'launch', '02_spawn_robots.launch.py')
@@ -51,13 +56,14 @@ def generate_launch_description():
         actions=[IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(pkg_dir, 'launch', '03_navigation.launch.py')
-            )
+            ),
+            launch_arguments={'rviz': LaunchConfiguration('rviz')}.items()
         )]
     )
 
-    # ── Phase 4: Mission Controller C++ node (t=25s, after Nav2 is up) ────────
+    # ── Phase 4: Mission Controller C++ node (t=70s, after both Nav2 stacks are up)
     mission_controller = TimerAction(
-        period=25.0,
+        period=70.0,
         actions=[Node(
             package='dual_robot_nav',
             executable='mission_controller',
@@ -69,6 +75,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         gui_arg,
+        rviz_arg,
         launch_gazebo,
         launch_spawn,
         launch_nav,
