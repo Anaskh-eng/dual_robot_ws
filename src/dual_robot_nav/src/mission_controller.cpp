@@ -210,4 +210,4 @@ int main(int argc, char ** argv)
   rclcpp::spin(std::make_shared<dual_robot_nav::MissionController>());
   rclcpp::shutdown();
   return 0;
-} Navigation stacks (t=15s, after rob
+}

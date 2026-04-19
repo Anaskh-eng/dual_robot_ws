@@ -20,7 +20,7 @@ def generate_launch_description():
     # ── Arguments ──────────────────────────────────────────────────────────────
     world_file_arg = DeclareLaunchArgument(
         'world',
-        default_value=os.path.join(pkg_dir, 'worlds', 'fms_layout1.world'),
+        default_value=os.path.join(pkg_dir, 'worlds', 'fms_layout4.world'),
         description='Full path to the custom Gazebo world file.'
     )
 

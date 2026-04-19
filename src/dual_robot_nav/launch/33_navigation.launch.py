@@ -100,7 +100,7 @@ def generate_launch_description():
     )
     rviz_enabled = LaunchConfiguration('rviz')
 
-    map_yaml     = os.path.join(pkg_dir, 'maps',   'fms_layout1.yaml')
+    map_yaml     = os.path.join(pkg_dir, 'maps',   'fms_layout4.yaml')
     params_tb3_1 = os.path.join(pkg_dir, 'config', 'nav2_params_tb3_1.yaml')
     params_tb3_2 = os.path.join(pkg_dir, 'config', 'nav2_params_tb3_2.yaml')
     rviz_tb3_1   = os.path.join(pkg_dir, 'rviz',   'tb3_1_nav.rviz')

@@ -87,12 +87,12 @@ def make_robot_sdf(namespace: str, source_sdf: str) -> str:
 def generate_launch_description():
 
     args = [
-        DeclareLaunchArgument('tb3_1_x',   default_value='-1.0'),
-        DeclareLaunchArgument('tb3_1_y',   default_value='-3.5'),
-        DeclareLaunchArgument('tb3_1_yaw', default_value='1.57'),
-        DeclareLaunchArgument('tb3_2_x',   default_value='1.0'),
-        DeclareLaunchArgument('tb3_2_y',   default_value='-3.5'),
-        DeclareLaunchArgument('tb3_2_yaw', default_value='1.57'),
+        DeclareLaunchArgument('tb3_1_x',   default_value='-3.5'),
+        DeclareLaunchArgument('tb3_1_y',   default_value='-1.0'),
+        DeclareLaunchArgument('tb3_1_yaw', default_value='0.0'),
+        DeclareLaunchArgument('tb3_2_x',   default_value='-3.5'),
+        DeclareLaunchArgument('tb3_2_y',   default_value='1.0'),
+        DeclareLaunchArgument('tb3_2_yaw', default_value='0.0'),
     ]
 
     # Read URDF once — same base description for both robots.
