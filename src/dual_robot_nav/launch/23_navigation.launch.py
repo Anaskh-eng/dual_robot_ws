@@ -10,7 +10,7 @@ from launch_ros.descriptions import ParameterFile
 from nav2_common.launch import RewrittenYaml
 
 
-def _nav2_group(namespace, params_file, map_yaml, rviz_config, rviz_enabled):
+def _nav2_group(namespace, params_file, map_yaml, rviz_config, rviz_enabled, init_x, init_y, init_yaw):
 
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
     tf_remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
@@ -21,6 +21,9 @@ def _nav2_group(namespace, params_file, map_yaml, rviz_config, rviz_enabled):
             param_rewrites={
                 'use_sim_time': 'true',
                 'yaml_filename': map_yaml,
+                'x':             init_x,
+                'y':             init_y,
+                'yaw':           init_yaw,
             },
             convert_types=True,
         ),
@@ -106,10 +109,10 @@ def generate_launch_description():
     rviz_tb3_1   = os.path.join(pkg_dir, 'rviz',   'tb3_1_nav.rviz')
     rviz_tb3_2   = os.path.join(pkg_dir, 'rviz',   'tb3_2_nav.rviz')
 
-    nav_tb3_1 = _nav2_group('TB3_1', params_tb3_1, map_yaml, rviz_tb3_1, rviz_enabled)
+    nav_tb3_1 = _nav2_group('TB3_1', params_tb3_1, map_yaml, rviz_tb3_1, rviz_enabled, '-1', '-3', '1.57')
     nav_tb3_2 = TimerAction(
         period=5.0,
-        actions=[_nav2_group('TB3_2', params_tb3_2, map_yaml, rviz_tb3_2, rviz_enabled)]
+        actions=[_nav2_group('TB3_2', params_tb3_2, map_yaml, rviz_tb3_2, rviz_enabled, '1', '-3.0', '1.57')]
     )
 
     return LaunchDescription([rviz_arg, nav_tb3_1, nav_tb3_2])
