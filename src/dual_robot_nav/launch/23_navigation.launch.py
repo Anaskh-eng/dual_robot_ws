@@ -109,10 +109,10 @@ def generate_launch_description():
     rviz_tb3_1   = os.path.join(pkg_dir, 'rviz',   'tb3_1_nav.rviz')
     rviz_tb3_2   = os.path.join(pkg_dir, 'rviz',   'tb3_2_nav.rviz')
 
-    nav_tb3_1 = _nav2_group('TB3_1', params_tb3_1, map_yaml, rviz_tb3_1, rviz_enabled, '-1', '-3', '1.57')
+    nav_tb3_1 = _nav2_group('TB3_1', params_tb3_1, map_yaml, rviz_tb3_1, rviz_enabled, '-1.0', '-3.0', '1.57')
     nav_tb3_2 = TimerAction(
         period=5.0,
-        actions=[_nav2_group('TB3_2', params_tb3_2, map_yaml, rviz_tb3_2, rviz_enabled, '1', '-3.0', '1.57')]
+        actions=[_nav2_group('TB3_2', params_tb3_2, map_yaml, rviz_tb3_2, rviz_enabled, '1.0', '-3.0', '1.57')]
     )
 
     return LaunchDescription([rviz_arg, nav_tb3_1, nav_tb3_2])

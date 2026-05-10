@@ -71,30 +71,97 @@ void MissionController::initClients()
 void MissionController::executeDemoMission()
 {
   // ── Define waypoints (adjust coordinates to match your warehouse layout) ──
-  const Waypoint loading_dock   = {"Loading Dock",    0.5,  1.5, 0.0};
-  const Waypoint unloading_dock = {"Unloading Dock", -0.5, -1.5, M_PI};
+  // Loading Docks
+  const Waypoint loading_dock_TB3_1  = {"Loading Dock TB3_1",    -0.5,  -3.5, 1.57};
+  const Waypoint loading_dock_TB3_2  = {"Loading Dock TB3_2",     0.5,  -3.5, 1.57};
+  
+  // Machines for TB3_1
+  const Waypoint machine_M1 = {"Machine M1", -4.5, 2.0, 0.0};
+  const Waypoint machine_M2 = {"Machine M2",  -1.5, 2.0, 0.0};
+  
+  // Machines for TB3_2
+  const Waypoint machine_M3 = {"Machine M3",  1.5, 2.0, 0.0};
+  const Waypoint machine_M4 = {"Machine M4",  4.5, 2.0, 0.0};
 
   RCLCPP_INFO(get_logger(), "Dispatching demo mission to both robots...");
 
-  // TB3_1 → Loading Dock
-  sendGoal("TB3_1", loading_dock,
-    [this](bool success, const std::string & robot_id) {
+  // TB3_1 → Loading Dock → M1 → M2
+  sendGoal("TB3_1", loading_dock_TB3_1,
+    [this, machine_M1, machine_M2, loading_dock_TB3_1](bool success, const std::string & robot_id) {
       if (success) {
         RCLCPP_INFO(get_logger(), "[%s] Reached Loading Dock. Ready for pickup.",
                     robot_id.c_str());
+        // Next: TB3_1 goes to M1
+        sendGoal("TB3_1", machine_M1,
+          [this, machine_M2, loading_dock_TB3_1](bool m1_success, const std::string & id) {
+            if (m1_success) {
+              RCLCPP_INFO(get_logger(), "[%s] Reached Machine M1. Processing...",
+                          id.c_str());
+              // Next: TB3_1 goes to M2
+              sendGoal("TB3_1", machine_M2,
+                [this, loading_dock_TB3_1](bool m2_success, const std::string & id2) {
+                  if (m2_success) {
+                    RCLCPP_INFO(get_logger(), "[%s] Reached Machine M2. Mission complete.",
+                                id2.c_str());
+                    RCLCPP_INFO(get_logger(), "[%s] Returning to Loading Dock.", id2.c_str());
+                    sendGoal("TB3_1", loading_dock_TB3_1,
+                      [this](bool return_success, const std::string & id3) {
+                        if (return_success) {
+                          RCLCPP_INFO(get_logger(), "[%s] Returned to Loading Dock.", id3.c_str());
+                        } else {
+                          RCLCPP_WARN(get_logger(), "[%s] Failed to return to Loading Dock.", id3.c_str());
+                        }
+                      });
+                  } else {
+                    RCLCPP_WARN(get_logger(), "[%s] Failed to reach Machine M2.", id2.c_str());
+                  }
+                });
+            } else {
+              RCLCPP_WARN(get_logger(), "[%s] Failed to reach Machine M1.", id.c_str());
+            }
+          });
       } else {
         RCLCPP_WARN(get_logger(), "[%s] Failed to reach Loading Dock.", robot_id.c_str());
       }
     });
 
-  // TB3_2 → Unloading Dock (concurrent with TB3_1)
-  sendGoal("TB3_2", unloading_dock,
-    [this](bool success, const std::string & robot_id) {
+  // TB3_2 → Loading Dock → M3 → M4 (concurrent with TB3_1)
+  sendGoal("TB3_2", loading_dock_TB3_2,
+    [this, machine_M3, machine_M4, loading_dock_TB3_2](bool success, const std::string & robot_id) {
       if (success) {
-        RCLCPP_INFO(get_logger(), "[%s] Reached Unloading Dock. Ready to deposit.",
+        RCLCPP_INFO(get_logger(), "[%s] Reached Loading Dock. Ready for pickup.",
                     robot_id.c_str());
+        // Next: TB3_2 goes to M3
+        sendGoal("TB3_2", machine_M3,
+          [this, machine_M4, loading_dock_TB3_2](bool m3_success, const std::string & id) {
+            if (m3_success) {
+              RCLCPP_INFO(get_logger(), "[%s] Reached Machine M3. Processing...",
+                          id.c_str());
+              // Next: TB3_2 goes to M4
+              sendGoal("TB3_2", machine_M4,
+                [this, loading_dock_TB3_2](bool m4_success, const std::string & id2) {
+                  if (m4_success) {
+                    RCLCPP_INFO(get_logger(), "[%s] Reached Machine M4. Mission complete.",
+                                id2.c_str());
+                    RCLCPP_INFO(get_logger(), "[%s] Returning to Loading Dock.", id2.c_str());
+                    sendGoal("TB3_2", loading_dock_TB3_2,
+                      [this](bool return_success, const std::string & id3) {
+                        if (return_success) {
+                          RCLCPP_INFO(get_logger(), "[%s] Returned to Loading Dock.", id3.c_str());
+                        } else {
+                          RCLCPP_WARN(get_logger(), "[%s] Failed to return to Loading Dock.", id3.c_str());
+                        }
+                      });
+                  } else {
+                    RCLCPP_WARN(get_logger(), "[%s] Failed to reach Machine M4.", id2.c_str());
+                  }
+                });
+            } else {
+              RCLCPP_WARN(get_logger(), "[%s] Failed to reach Machine M3.", id.c_str());
+            }
+          });
       } else {
-        RCLCPP_WARN(get_logger(), "[%s] Failed to reach Unloading Dock.", robot_id.c_str());
+        RCLCPP_WARN(get_logger(), "[%s] Failed to reach Loading Dock.", robot_id.c_str());
       }
     });
 }

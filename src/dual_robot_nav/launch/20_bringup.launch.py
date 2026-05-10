@@ -1,11 +1,11 @@
 """
-Launch File: 00_bringup.launch.py
+Launch File: 20_bringup.launch.py
 Purpose   : Single-command launcher that orchestrates all phases in order.
-            Gazebo → Spawn Robots → Navigation → Mission Controller
+            Layout 3 Gazebo -> Spawn Robots -> Navigation -> Mission Controller
 
 Usage:
-    ros2 launch dual_robot_nav 00_bringup.launch.py
-    ros2 launch dual_robot_nav 00_bringup.launch.py gui:=false  # headless
+    ros2 launch dual_robot_nav 20_bringup.launch.py
+    ros2 launch dual_robot_nav 20_bringup.launch.py gui:=false  # headless
 """
 
 import os
@@ -61,12 +61,12 @@ def generate_launch_description():
         )]
     )
 
-    # ── Phase 4: Mission Controller C++ node (t=70s, after both Nav2 stacks are up)
+    # ── Phase 4: Layout 3 Mission Controller C++ node (t=70s, after both Nav2 stacks are up)
     mission_controller = TimerAction(
         period=70.0,
         actions=[Node(
             package='dual_robot_nav',
-            executable='mission_controller',
+            executable='3_mission_controller',
             name='mission_controller',
             output='screen',
             parameters=[{'use_sim_time': True}]
