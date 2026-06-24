@@ -76,12 +76,12 @@ void MissionController::executeDemoMission()
   const Waypoint loading_dock_TB3_2  = {"Loading Dock TB3_2",     -3.5,  0.5, 0.0};
   
   // Machines for TB3_1
-  const Waypoint machine_M1 = {"Machine M1", -1.0, 2.5, 0.0};
-  const Waypoint machine_M2 = {"Machine M2",  1.5, 2.5, 0.0};
+  const Waypoint machine_M1 = {"Machine M1", 0.0, -1.5, 0.0};
+  const Waypoint machine_M2 = {"Machine M2",  2.5, -1.5, 0.0};
   
   // Machines for TB3_2
-  const Waypoint machine_M3 = {"Machine M3",  0.0, -1.5, 0.0};
-  const Waypoint machine_M4 = {"Machine M4",  2.5, -1.5, 0.0};
+  const Waypoint machine_M3 = {"Machine M3",  -1.0, 2.5, 0.0};
+  const Waypoint machine_M4 = {"Machine M4",  1.5, 2.5, 0.0};
 
   RCLCPP_INFO(get_logger(), "Dispatching demo mission to both robots...");
 

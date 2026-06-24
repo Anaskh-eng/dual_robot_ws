@@ -1,0 +1,53 @@
+[INFO] [1780662535.505912070] [smart_fms_navigator]: FMS navigator initialized.
+[INFO] [1780662535.506998506] [smart_fms_navigator]: Moving to L/U Station (Load M1).
+[INFO] [1780662535.507690424] [basic_navigator]: Navigating to goal: 0.0 -3.5...
+[INFO] [1780662554.470663573] [smart_fms_navigator]: Pausing 2.0s at L/U Station (Load M1).
+[INFO] [1780662556.472977640] [smart_fms_navigator]: Moving to Machine 1 (Unload).
+[INFO] [1780662556.473804263] [basic_navigator]: Navigating to goal: -4.5 2.0...
+[INFO] [1780662583.487927859] [smart_fms_navigator]: Pausing 2.0s at Machine 1 (Unload).
+[INFO] [1780662585.489897252] [smart_fms_navigator]: Moving to L/U Station (Load M2).
+[INFO] [1780662585.490869207] [basic_navigator]: Navigating to goal: 0.0 -3.5...
+[INFO] [1780662617.804126899] [smart_fms_navigator]: Pausing 2.0s at L/U Station (Load M2).
+[INFO] [1780662619.805959419] [smart_fms_navigator]: Moving to Machine 2 (Unload).
+[INFO] [1780662619.806905245] [basic_navigator]: Navigating to goal: -1.5 2.0...
+[INFO] [1780662640.669603755] [smart_fms_navigator]: Pausing 2.0s at Machine 2 (Unload).
+[INFO] [1780662642.671788420] [smart_fms_navigator]: Moving to L/U Station (Load M3).
+[INFO] [1780662642.672516592] [basic_navigator]: Navigating to goal: 0.0 -3.5...
+Traceback (most recent call last):
+  File "/home/anaskh007/Anasros2_ws/build/mission_planner/mission_planner/navigation_common.py", line 141, in execute_mission
+    if not nav.navigate_to_waypoint(waypoint, task_timeout_sec):
+  File "/home/anaskh007/Anasros2_ws/build/mission_planner/mission_planner/navigation_common.py", line 106, in navigate_to_waypoint
+    while not self.navigator.isTaskComplete():
+  File "/opt/ros/humble/lib/python3.10/site-packages/nav2_simple_commander/robot_navigator.py", line 283, in isTaskComplete
+    rclpy.spin_until_future_complete(self, self.result_future, timeout_sec=0.10)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 256, in spin_until_future_complete
+    executor.spin_until_future_complete(future, timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 349, in spin_until_future_complete
+    self.spin_once_until_future_complete(future, timeout_left)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 815, in spin_once_until_future_complete
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 677, in _wait_for_ready_callbacks
+    wait_set.wait(timeout_nsec)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anaskh007/Anasros2_ws/install/mission_planner/lib/mission_planner/single_robot_nav", line 33, in <module>
+    sys.exit(load_entry_point('mission-planner', 'console_scripts', 'single_robot_nav')())
+  File "/home/anaskh007/Anasros2_ws/build/mission_planner/mission_planner/single_robot_nav.py", line 43, in main
+    return execute_mission(build_mission())
+  File "/home/anaskh007/Anasros2_ws/build/mission_planner/mission_planner/navigation_common.py", line 151, in execute_mission
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[ros2run]: Process exited with failure 1

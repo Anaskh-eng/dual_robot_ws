@@ -1,0 +1,1226 @@
+[INFO] [launch]: All log files can be found below /home/anaskh007/.ros/log/2026-06-06-06-08-53-033464-anaskh007-ubuntu-235550
+[INFO] [launch]: Default logging verbosity is set to INFO
+[SPAWN] Using URDF: /opt/ros/humble/share/turtlebot3_gazebo/urdf/turtlebot3_waffle_pi.urdf
+[SPAWN] Using Gazebo SDF: /opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi/model.sdf
+[SPAWN] Generated namespaced SDF for TB3_1: /tmp/dual_robot_nav_sdf/TB3_1.sdf
+[SPAWN] Generated namespaced SDF for TB3_2: /tmp/dual_robot_nav_sdf/TB3_2.sdf
+[INFO] [gzserver-1]: process started with pid [235564]
+[INFO] [gzclient-2]: process started with pid [235566]
+[gzserver-1] Gazebo multi-robot simulator, version 11.10.2
+[gzserver-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[gzserver-1] Released under the Apache 2 License.
+[gzserver-1] http://gazebosim.org
+[gzserver-1] 
+[gzserver-1] [1;33m[Wrn] [gazebo_ros_init.cpp:178] [0m[1;33m
+[gzserver-1] #     # ####### ####### ###  #####  #######
+[gzserver-1] ##    # #     #    #     #  #     # #
+[gzserver-1] # #   # #     #    #     #  #       #
+[gzserver-1] #  #  # #     #    #     #  #       #####
+[gzserver-1] #   # # #     #    #     #  #       #
+[gzserver-1] #    ## #     #    #     #  #     # #
+[gzserver-1] #     # #######    #    ###  #####  #######
+[gzserver-1] 
+[gzserver-1] This version of Gazebo, now called Gazebo classic, reaches end-of-life
+[gzserver-1] in January 2025. Users are highly encouraged to migrate to the new Gazebo
+[gzserver-1] using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+[gzserver-1] 
+[gzserver-1] [0m[1;33m
+[gzclient-2] 
+[gzclient-2] (gzclient:235566): Gtk-WARNING **: 06:08:54.443: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+[gzserver-1] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.100.13[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/worlds/fms_layout4.world[0m[1;32m][0m[1;32m
+[SPAWN] Using URDF: /opt/ros/humble/share/turtlebot3_gazebo/urdf/turtlebot3_waffle_pi.urdf
+[SPAWN] Using Gazebo SDF: /opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi/model.sdf
+[SPAWN] Generated namespaced SDF for TB3_1: /tmp/dual_robot_nav_sdf/TB3_1.sdf
+[SPAWN] Generated namespaced SDF for TB3_2: /tmp/dual_robot_nav_sdf/TB3_2.sdf
+[INFO] [robot_state_publisher-3]: process started with pid [235802]
+[INFO] [spawn_entity.py-4]: process started with pid [235804]
+[robot_state_publisher-3] [INFO] [1780697345.153640292] [TB3_1.robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1780697345.153722831] [TB3_1.robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1780697345.153731308] [TB3_1.robot_state_publisher]: got segment base_scan
+[robot_state_publisher-3] [INFO] [1780697345.153736188] [TB3_1.robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1780697345.153740861] [TB3_1.robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-3] [INFO] [1780697345.153745331] [TB3_1.robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-3] [INFO] [1780697345.153751346] [TB3_1.robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-3] [INFO] [1780697345.153755953] [TB3_1.robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-3] [INFO] [1780697345.153760261] [TB3_1.robot_state_publisher]: got segment imu_link
+[robot_state_publisher-3] [INFO] [1780697345.153764857] [TB3_1.robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-3] [INFO] [1780697345.153769647] [TB3_1.robot_state_publisher]: got segment wheel_right_link
+[spawn_entity.py-4] [INFO] [1780697345.422262610] [TB3_1.spawn_tb3_1]: Spawn Entity started
+[spawn_entity.py-4] [INFO] [1780697345.422578134] [TB3_1.spawn_tb3_1]: Loading entity XML from file /tmp/dual_robot_nav_sdf/TB3_1.sdf
+[spawn_entity.py-4] [INFO] [1780697345.423190974] [TB3_1.spawn_tb3_1]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-4] [INFO] [1780697345.423386445] [TB3_1.spawn_tb3_1]: Waiting for service /spawn_entity
+[spawn_entity.py-4] [INFO] [1780697345.426115619] [TB3_1.spawn_tb3_1]: Calling service /spawn_entity
+[gzserver-1] [0m[1;33m[0m[1;33m[0m[INFO] [1780697345.634045979] [TB3_1.turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[spawn_entity.py-4] [INFO] [1780697345.694348174] [TB3_1.spawn_tb3_1]: Spawn status: SpawnEntity: Successfully spawned entity [TB3_1]
+[gzserver-1] [INFO] [1780697345.844097123] [TB3_1.camera_driver]: Publishing camera info to [/TB3_1/camera/camera_info]
+[gzserver-1] [INFO] [1780697345.907261997] [TB3_1.turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[gzserver-1] [INFO] [1780697345.907360371] [TB3_1.turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1780697345.908003262] [TB3_1.turtlebot3_diff_drive]: Subscribed to [/TB3_1/cmd_vel]
+[gzserver-1] [INFO] [1780697345.908824024] [TB3_1.turtlebot3_diff_drive]: Advertise odometry on [/TB3_1/odom]
+[gzserver-1] [INFO] [1780697345.909701236] [TB3_1.turtlebot3_diff_drive]: Publishing odom transforms between [TB3_1/odom] and [TB3_1/base_footprint]
+[gzserver-1] [INFO] [1780697345.915672897] [TB3_1.turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1780697345.915736341] [TB3_1.turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[INFO] [spawn_entity.py-4]: process has finished cleanly [pid 235804]
+[INFO] [launch.user]: [SPAWN] TB3_1 done. Spawning TB3_2...
+[INFO] [robot_state_publisher-5]: process started with pid [235831]
+[INFO] [spawn_entity.py-6]: process started with pid [235833]
+[robot_state_publisher-5] [INFO] [1780697345.990798606] [TB3_2.robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-5] [INFO] [1780697345.990950479] [TB3_2.robot_state_publisher]: got segment base_link
+[robot_state_publisher-5] [INFO] [1780697345.990984158] [TB3_2.robot_state_publisher]: got segment base_scan
+[robot_state_publisher-5] [INFO] [1780697345.991010472] [TB3_2.robot_state_publisher]: got segment camera_link
+[robot_state_publisher-5] [INFO] [1780697345.991033852] [TB3_2.robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-5] [INFO] [1780697345.991055904] [TB3_2.robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-5] [INFO] [1780697345.991077260] [TB3_2.robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-5] [INFO] [1780697345.991097879] [TB3_2.robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-5] [INFO] [1780697345.991119404] [TB3_2.robot_state_publisher]: got segment imu_link
+[robot_state_publisher-5] [INFO] [1780697345.991170930] [TB3_2.robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-5] [INFO] [1780697345.991191636] [TB3_2.robot_state_publisher]: got segment wheel_right_link
+[spawn_entity.py-6] [INFO] [1780697346.318326641] [TB3_2.spawn_tb3_2]: Spawn Entity started
+[spawn_entity.py-6] [INFO] [1780697346.318637835] [TB3_2.spawn_tb3_2]: Loading entity XML from file /tmp/dual_robot_nav_sdf/TB3_2.sdf
+[spawn_entity.py-6] [INFO] [1780697346.319253528] [TB3_2.spawn_tb3_2]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-6] [INFO] [1780697346.319442901] [TB3_2.spawn_tb3_2]: Waiting for service /spawn_entity
+[spawn_entity.py-6] [INFO] [1780697346.322153007] [TB3_2.spawn_tb3_2]: Calling service /spawn_entity
+[gzserver-1] [INFO] [1780697346.586997426] [TB3_2.turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[spawn_entity.py-6] [INFO] [1780697346.649267017] [TB3_2.spawn_tb3_2]: Spawn status: SpawnEntity: Successfully spawned entity [TB3_2]
+[gzserver-1] [INFO] [1780697346.660699498] [TB3_2.camera_driver]: Publishing camera info to [/TB3_2/camera/camera_info]
+[gzserver-1] [INFO] [1780697346.752527211] [TB3_2.turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[gzserver-1] [INFO] [1780697346.752827810] [TB3_2.turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1780697346.754183199] [TB3_2.turtlebot3_diff_drive]: Subscribed to [/TB3_2/cmd_vel]
+[gzserver-1] [INFO] [1780697346.755662643] [TB3_2.turtlebot3_diff_drive]: Advertise odometry on [/TB3_2/odom]
+[gzserver-1] [INFO] [1780697346.758204613] [TB3_2.turtlebot3_diff_drive]: Publishing odom transforms between [TB3_2/odom] and [TB3_2/base_footprint]
+[gzserver-1] [INFO] [1780697346.761685343] [TB3_2.turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1780697346.761727202] [TB3_2.turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[INFO] [spawn_entity.py-6]: process has finished cleanly [pid 235833]
+[INFO] [map_server-7]: process started with pid [235869]
+[INFO] [amcl-8]: process started with pid [235871]
+[INFO] [lifecycle_manager-9]: process started with pid [235873]
+[INFO] [controller_server-10]: process started with pid [235875]
+[INFO] [smoother_server-11]: process started with pid [235877]
+[INFO] [planner_server-12]: process started with pid [235879]
+[INFO] [behavior_server-13]: process started with pid [235881]
+[INFO] [bt_navigator-14]: process started with pid [235883]
+[INFO] [waypoint_follower-15]: process started with pid [235885]
+[INFO] [velocity_smoother-16]: process started with pid [235887]
+[INFO] [lifecycle_manager-17]: process started with pid [235889]
+[INFO] [rviz2-18]: process started with pid [235891]
+[lifecycle_manager-9] [INFO] [1780697348.298806000] [TB3_1.lifecycle_manager_localization]: Creating
+[planner_server-12] [INFO] [1780697348.299836280] [TB3_1.planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1780697348.301090999] [TB3_1.planner_server]: Creating
+[lifecycle_manager-9] [INFO] [1780697348.301813914] [TB3_1.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-17] [INFO] [1780697348.303541462] [TB3_1.lifecycle_manager_navigation]: Creating
+[planner_server-12] [INFO] [1780697348.305982784] [TB3_1.global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1780697348.306563238] [TB3_1.global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-17] [INFO] [1780697348.306591175] [TB3_1.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[smoother_server-11] [INFO] [1780697348.311131169] [TB3_1.smoother_server]: 
+[smoother_server-11] 	smoother_server lifecycle node launched. 
+[smoother_server-11] 	Waiting on external lifecycle transitions to activate
+[smoother_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-11] [INFO] [1780697348.313602525] [TB3_1.smoother_server]: Creating smoother server
+[waypoint_follower-15] [INFO] [1780697348.316661154] [TB3_1.waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1780697348.317202584] [TB3_1.waypoint_follower]: Creating
+[controller_server-10] [INFO] [1780697348.317645289] [TB3_1.controller_server]: 
+[controller_server-10] 	controller_server lifecycle node launched. 
+[controller_server-10] 	Waiting on external lifecycle transitions to activate
+[controller_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-7] [INFO] [1780697348.321420831] [TB3_1.map_server]: 
+[map_server-7] 	map_server lifecycle node launched. 
+[map_server-7] 	Waiting on external lifecycle transitions to activate
+[map_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-7] [INFO] [1780697348.321611431] [TB3_1.map_server]: Creating
+[bt_navigator-14] [INFO] [1780697348.323655622] [TB3_1.bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1780697348.323790224] [TB3_1.bt_navigator]: Creating
+[controller_server-10] [INFO] [1780697348.326374259] [TB3_1.controller_server]: Creating controller server
+[velocity_smoother-16] [INFO] [1780697348.327392655] [TB3_1.velocity_smoother]: 
+[velocity_smoother-16] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-16] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-16] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-10] [INFO] [1780697348.338623379] [TB3_1.local_costmap.local_costmap]: 
+[controller_server-10] 	local_costmap lifecycle node launched. 
+[controller_server-10] 	Waiting on external lifecycle transitions to activate
+[controller_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-10] [INFO] [1780697348.339286595] [TB3_1.local_costmap.local_costmap]: Creating Costmap
+[behavior_server-13] [INFO] [1780697348.340217920] [TB3_1.behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-8] [INFO] [1780697348.360970567] [TB3_1.amcl]: 
+[amcl-8] 	amcl lifecycle node launched. 
+[amcl-8] 	Waiting on external lifecycle transitions to activate
+[amcl-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-8] [INFO] [1780697348.361821630] [TB3_1.amcl]: Creating
+[rviz2-18] 
+[rviz2-18] (rviz2:235891): Gtk-WARNING **: 06:09:08.398: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+[lifecycle_manager-9] [INFO] [1780697348.440982237] [TB3_1.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-9] [INFO] [1780697348.441082935] [TB3_1.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-7] [INFO] [1780697348.441716161] [TB3_1.map_server]: Configuring
+[map_server-7] [INFO] [1780697348.441905761] [map_io]: Loading yaml file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/maps/fms_layout4.yaml
+[map_server-7] [INFO] [1780697348.442308962] [map_io]: resolution: 0.05
+[map_server-7] [INFO] [1780697348.442328950] [map_io]: origin[0]: -5.29
+[map_server-7] [INFO] [1780697348.442336869] [map_io]: origin[1]: -4.87
+[map_server-7] [INFO] [1780697348.442343633] [map_io]: origin[2]: 0
+[map_server-7] [INFO] [1780697348.442350605] [map_io]: free_thresh: 0.25
+[map_server-7] [INFO] [1780697348.442357350] [map_io]: occupied_thresh: 0.65
+[map_server-7] [INFO] [1780697348.442364627] [map_io]: mode: trinary
+[map_server-7] [INFO] [1780697348.442372099] [map_io]: negate: 0
+[map_server-7] [INFO] [1780697348.442641416] [map_io]: Loading image_file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/maps/fms_layout4.pgm
+[map_server-7] [INFO] [1780697348.447543002] [map_io]: Read map /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/maps/fms_layout4.pgm: 212 X 194 map @ 0.05 m/cell
+[lifecycle_manager-9] [INFO] [1780697348.451902717] [TB3_1.lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-8] [INFO] [1780697348.452089065] [TB3_1.amcl]: Configuring
+[amcl-8] [INFO] [1780697348.452213811] [TB3_1.amcl]: initTransforms
+[lifecycle_manager-17] [INFO] [1780697348.459515869] [TB3_1.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-17] [INFO] [1780697348.459605160] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-10] [INFO] [1780697348.460098155] [TB3_1.controller_server]: Configuring controller interface
+[controller_server-10] [INFO] [1780697348.460879568] [TB3_1.controller_server]: getting goal checker plugins..
+[controller_server-10] [INFO] [1780697348.461204625] [TB3_1.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-10] [INFO] [1780697348.461276094] [TB3_1.local_costmap.local_costmap]: Configuring
+[amcl-8] [INFO] [1780697348.461753332] [TB3_1.amcl]: initPubSub
+[amcl-8] [INFO] [1780697348.465305268] [TB3_1.amcl]: Subscribed to map topic.
+[controller_server-10] [INFO] [1780697348.465928112] [TB3_1.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[lifecycle_manager-9] [INFO] [1780697348.467585581] [TB3_1.lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-7] [INFO] [1780697348.467754550] [TB3_1.map_server]: Activating
+[map_server-7] [INFO] [1780697348.467869267] [TB3_1.map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-8] [INFO] [1780697348.467977313] [TB3_1.amcl]: Received a 212 X 194 map @ 0.050 m/pix
+[controller_server-10] [INFO] [1780697348.468844869] [TB3_1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-10] [INFO] [1780697348.474258006] [TB3_1.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-10] [INFO] [1780697348.474338757] [TB3_1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-10] [INFO] [1780697348.474985996] [TB3_1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-10] [ERROR] [1780697348.478185703] [TB3_1.local_costmap.local_costmap]: The configured inflation radius (0.200) is smaller than the computed inscribed radius (0.225) of your footprint, it is highly recommended to set inflation radius to be at least as big as the inscribed radius to avoid collisions
+[controller_server-10] [INFO] [1780697348.480268258] [TB3_1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-10] [INFO] [1780697348.481398005] [TB3_1.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-10] [INFO] [1780697348.481847614] [TB3_1.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-10] [INFO] [1780697348.482390674] [TB3_1.controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-10] [INFO] [1780697348.485504624] [TB3_1.controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-17] [INFO] [1780697348.488510364] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-11] [INFO] [1780697348.488756671] [TB3_1.smoother_server]: Configuring smoother server
+[smoother_server-11] [INFO] [1780697348.495743122] [TB3_1.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-11] [INFO] [1780697348.496571988] [TB3_1.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-17] [INFO] [1780697348.500583624] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-12] [INFO] [1780697348.500876497] [TB3_1.planner_server]: Configuring
+[planner_server-12] [INFO] [1780697348.500963374] [TB3_1.global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1780697348.504935552] [TB3_1.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-12] [INFO] [1780697348.507790657] [TB3_1.global_costmap.global_costmap]: Subscribing to the map topic (/TB3_1/map) with transient local durability
+[planner_server-12] [INFO] [1780697348.508679228] [TB3_1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1780697348.508732065] [TB3_1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1780697348.509295082] [TB3_1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1780697348.512482927] [TB3_1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1780697348.512569703] [TB3_1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1780697348.513545357] [TB3_1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [ERROR] [1780697348.517800440] [TB3_1.global_costmap.global_costmap]: The configured inflation radius (0.200) is smaller than the computed inscribed radius (0.225) of your footprint, it is highly recommended to set inflation radius to be at least as big as the inscribed radius to avoid collisions
+[planner_server-12] [INFO] [1780697348.520418991] [TB3_1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 212 X 194 at 0.050000 m/pix
+[planner_server-12] [INFO] [1780697348.520719770] [TB3_1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1780697348.520786972] [TB3_1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1780697348.522118612] [TB3_1.planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-17] [INFO] [1780697348.527623873] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-13] [INFO] [1780697348.528021998] [TB3_1.behavior_server]: Configuring
+[behavior_server-13] [INFO] [1780697348.533585436] [TB3_1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1780697348.535027260] [TB3_1.behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1780697348.539067908] [TB3_1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1780697348.540211352] [TB3_1.behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1780697348.543811164] [TB3_1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1780697348.544940884] [TB3_1.behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1780697348.547956014] [TB3_1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1780697348.549101999] [TB3_1.behavior_server]: Configuring wait
+[behavior_server-13] [INFO] [1780697348.551907962] [TB3_1.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1780697348.553970167] [TB3_1.behavior_server]: Configuring assisted_teleop
+[lifecycle_manager-17] [INFO] [1780697348.559773103] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1780697348.560168534] [TB3_1.bt_navigator]: Configuring
+[lifecycle_manager-9] [INFO] [1780697348.571786099] [TB3_1.lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-9] [INFO] [1780697348.571887529] [TB3_1.lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-8] [INFO] [1780697348.572317964] [TB3_1.amcl]: Activating
+[amcl-8] [INFO] [1780697348.572416113] [TB3_1.amcl]: initialPoseReceived
+[amcl-8] [INFO] [1780697348.572669871] [TB3_1.amcl]: Setting pose (14.100000): -3.500 -1.000 0.000
+[amcl-8] [INFO] [1780697348.573479944] [TB3_1.amcl]: Creating bond (amcl) to lifecycle manager.
+[amcl-8] [INFO] [1780697348.585758983] [TB3_1.amcl]: createLaserObject
+[lifecycle_manager-17] [INFO] [1780697348.605657443] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1780697348.605939267] [TB3_1.waypoint_follower]: Configuring
+[waypoint_follower-15] [INFO] [1780697348.611637694] [TB3_1.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-17] [INFO] [1780697348.613050816] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-16] [INFO] [1780697348.613375214] [TB3_1.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-17] [INFO] [1780697348.616590244] [TB3_1.lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-10] [INFO] [1780697348.616842494] [TB3_1.controller_server]: Activating
+[controller_server-10] [INFO] [1780697348.616908876] [TB3_1.local_costmap.local_costmap]: Activating
+[controller_server-10] [INFO] [1780697348.616925305] [TB3_1.local_costmap.local_costmap]: Checking transform
+[controller_server-10] [INFO] [1780697348.617077967] [TB3_1.local_costmap.local_costmap]: start
+[lifecycle_manager-9] [INFO] [1780697348.676529445] [TB3_1.lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-9] [INFO] [1780697348.676588178] [TB3_1.lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-9] [INFO] [1780697348.676609409] [TB3_1.lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[rviz2-18] [INFO] [1780697348.703471374] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-18] [INFO] [1780697348.703584559] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-18] [INFO] [1780697348.738814173] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-10] [INFO] [1780697348.867639400] [TB3_1.controller_server]: Activating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-10] [INFO] [1780697348.867758689] [TB3_1.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1780697348.972140465] [TB3_1.lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-17] [INFO] [1780697348.972246853] [TB3_1.lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-11] [INFO] [1780697348.972814400] [TB3_1.smoother_server]: Activating
+[smoother_server-11] [INFO] [1780697348.972930446] [TB3_1.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1780697349.079394292] [TB3_1.lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-17] [INFO] [1780697349.079493385] [TB3_1.lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-12] [INFO] [1780697349.079793370] [TB3_1.planner_server]: Activating
+[planner_server-12] [INFO] [1780697349.079874477] [TB3_1.global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1780697349.079910727] [TB3_1.global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1780697349.080018797] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 14.607000 but the earliest data is at time 15.117000, when looking up transform from frame [TB3_1/base_footprint] to frame [map]
+[planner_server-12] [INFO] [1780697349.580296895] [TB3_1.global_costmap.global_costmap]: start
+[rviz2-18] [INFO] [1780697349.922555457] [rviz2]: Trying to create a map of size 212 x 194 using 1 swatches
+[rviz2-18] [ERROR] [1780697349.946756536] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-18] active samplers with a different type refer to the same texture image unit
+[rviz2-18] [INFO] [1780697350.046460637] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[rviz2-18] [INFO] [1780697350.591203365] [rviz2]: Trying to create a map of size 212 x 194 using 1 swatches
+[planner_server-12] [INFO] [1780697350.631203712] [TB3_1.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1780697350.631868562] [TB3_1.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1780697350.735468750] [TB3_1.lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-17] [INFO] [1780697350.735565975] [TB3_1.lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-13] [INFO] [1780697350.735929347] [TB3_1.behavior_server]: Activating
+[behavior_server-13] [INFO] [1780697350.735998751] [TB3_1.behavior_server]: Activating spin
+[behavior_server-13] [INFO] [1780697350.736021775] [TB3_1.behavior_server]: Activating backup
+[behavior_server-13] [INFO] [1780697350.736037239] [TB3_1.behavior_server]: Activating drive_on_heading
+[behavior_server-13] [INFO] [1780697350.736056035] [TB3_1.behavior_server]: Activating wait
+[behavior_server-13] [INFO] [1780697350.736071768] [TB3_1.behavior_server]: Activating assisted_teleop
+[behavior_server-13] [INFO] [1780697350.736090197] [TB3_1.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1780697350.839920470] [TB3_1.lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-17] [INFO] [1780697350.840048268] [TB3_1.lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-14] [INFO] [1780697350.840496584] [TB3_1.bt_navigator]: Activating
+[bt_navigator-14] [INFO] [1780697350.880333776] [TB3_1.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1780697350.984107356] [TB3_1.lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-17] [INFO] [1780697350.984265485] [TB3_1.lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-15] [INFO] [1780697350.984840641] [TB3_1.waypoint_follower]: Activating
+[waypoint_follower-15] [INFO] [1780697350.984942501] [TB3_1.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1780697351.087913758] [TB3_1.lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-17] [INFO] [1780697351.088047874] [TB3_1.lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-16] [INFO] [1780697351.088600384] [TB3_1.velocity_smoother]: Activating
+[velocity_smoother-16] [INFO] [1780697351.088731466] [TB3_1.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1780697351.192333848] [TB3_1.lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-17] [INFO] [1780697351.192486968] [TB3_1.lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-17] [INFO] [1780697351.192527455] [TB3_1.lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [map_server-19]: process started with pid [236090]
+[INFO] [amcl-20]: process started with pid [236092]
+[INFO] [lifecycle_manager-21]: process started with pid [236094]
+[INFO] [controller_server-22]: process started with pid [236096]
+[INFO] [smoother_server-23]: process started with pid [236098]
+[INFO] [planner_server-24]: process started with pid [236100]
+[INFO] [behavior_server-25]: process started with pid [236102]
+[INFO] [bt_navigator-26]: process started with pid [236104]
+[INFO] [waypoint_follower-27]: process started with pid [236106]
+[INFO] [velocity_smoother-28]: process started with pid [236108]
+[INFO] [lifecycle_manager-29]: process started with pid [236110]
+[INFO] [rviz2-30]: process started with pid [236112]
+[map_server-19] [INFO] [1780697353.496851249] [TB3_2.map_server]: 
+[map_server-19] 	map_server lifecycle node launched. 
+[map_server-19] 	Waiting on external lifecycle transitions to activate
+[map_server-19] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-19] [INFO] [1780697353.497043684] [TB3_2.map_server]: Creating
+[lifecycle_manager-21] [INFO] [1780697353.500536474] [TB3_2.lifecycle_manager_localization]: Creating
+[lifecycle_manager-21] [INFO] [1780697353.505870447] [TB3_2.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[velocity_smoother-28] [INFO] [1780697353.510659026] [TB3_2.velocity_smoother]: 
+[velocity_smoother-28] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-28] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-28] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-20] [INFO] [1780697353.520411824] [TB3_2.amcl]: 
+[amcl-20] 	amcl lifecycle node launched. 
+[amcl-20] 	Waiting on external lifecycle transitions to activate
+[amcl-20] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-20] [INFO] [1780697353.521061342] [TB3_2.amcl]: Creating
+[controller_server-22] [INFO] [1780697353.522312200] [TB3_2.controller_server]: 
+[controller_server-22] 	controller_server lifecycle node launched. 
+[controller_server-22] 	Waiting on external lifecycle transitions to activate
+[controller_server-22] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-27] [INFO] [1780697353.527150809] [TB3_2.waypoint_follower]: 
+[waypoint_follower-27] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-27] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-27] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-27] [INFO] [1780697353.551506521] [TB3_2.waypoint_follower]: Creating
+[lifecycle_manager-21] [INFO] [1780697353.551522466] [TB3_2.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-21] [INFO] [1780697353.551586456] [TB3_2.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-22] [INFO] [1780697353.557839165] [TB3_2.controller_server]: Creating controller server
+[bt_navigator-26] [INFO] [1780697353.561097398] [TB3_2.bt_navigator]: 
+[bt_navigator-26] 	bt_navigator lifecycle node launched. 
+[bt_navigator-26] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-26] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-26] [INFO] [1780697353.561372344] [TB3_2.bt_navigator]: Creating
+[lifecycle_manager-29] [INFO] [1780697353.561335795] [TB3_2.lifecycle_manager_navigation]: Creating
+[smoother_server-23] [INFO] [1780697353.562347436] [TB3_2.smoother_server]: 
+[smoother_server-23] 	smoother_server lifecycle node launched. 
+[smoother_server-23] 	Waiting on external lifecycle transitions to activate
+[smoother_server-23] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-23] [INFO] [1780697353.563971843] [TB3_2.smoother_server]: Creating smoother server
+[planner_server-24] [INFO] [1780697353.573213484] [TB3_2.planner_server]: 
+[planner_server-24] 	planner_server lifecycle node launched. 
+[planner_server-24] 	Waiting on external lifecycle transitions to activate
+[planner_server-24] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-24] [INFO] [1780697353.578192152] [TB3_2.planner_server]: Creating
+[lifecycle_manager-29] [INFO] [1780697353.584450000] [TB3_2.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[behavior_server-25] [INFO] [1780697353.598373524] [TB3_2.behavior_server]: 
+[behavior_server-25] 	behavior_server lifecycle node launched. 
+[behavior_server-25] 	Waiting on external lifecycle transitions to activate
+[behavior_server-25] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-22] [INFO] [1780697353.612790145] [TB3_2.local_costmap.local_costmap]: 
+[controller_server-22] 	local_costmap lifecycle node launched. 
+[controller_server-22] 	Waiting on external lifecycle transitions to activate
+[controller_server-22] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-22] [INFO] [1780697353.615861401] [TB3_2.local_costmap.local_costmap]: Creating Costmap
+[planner_server-24] [INFO] [1780697353.619089256] [TB3_2.global_costmap.global_costmap]: 
+[planner_server-24] 	global_costmap lifecycle node launched. 
+[planner_server-24] 	Waiting on external lifecycle transitions to activate
+[planner_server-24] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-24] [INFO] [1780697353.622240618] [TB3_2.global_costmap.global_costmap]: Creating Costmap
+[map_server-19] [INFO] [1780697353.649738400] [TB3_2.map_server]: Configuring
+[map_server-19] [INFO] [1780697353.650287309] [map_io]: Loading yaml file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/maps/fms_layout4.yaml
+[map_server-19] [INFO] [1780697353.650771826] [map_io]: resolution: 0.05
+[map_server-19] [INFO] [1780697353.650792286] [map_io]: origin[0]: -5.29
+[map_server-19] [INFO] [1780697353.650800830] [map_io]: origin[1]: -4.87
+[map_server-19] [INFO] [1780697353.650807968] [map_io]: origin[2]: 0
+[map_server-19] [INFO] [1780697353.650815245] [map_io]: free_thresh: 0.25
+[map_server-19] [INFO] [1780697353.650822742] [map_io]: occupied_thresh: 0.65
+[map_server-19] [INFO] [1780697353.650831976] [map_io]: mode: trinary
+[map_server-19] [INFO] [1780697353.650841793] [map_io]: negate: 0
+[map_server-19] [INFO] [1780697353.651104488] [map_io]: Loading image_file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/maps/fms_layout4.pgm
+[map_server-19] [INFO] [1780697353.657388684] [map_io]: Read map /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/maps/fms_layout4.pgm: 212 X 194 map @ 0.05 m/cell
+[lifecycle_manager-21] [INFO] [1780697353.664855462] [TB3_2.lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-20] [INFO] [1780697353.665420257] [TB3_2.amcl]: Configuring
+[amcl-20] [INFO] [1780697353.665859430] [TB3_2.amcl]: initTransforms
+[amcl-20] [INFO] [1780697353.675095390] [TB3_2.amcl]: initPubSub
+[amcl-20] [INFO] [1780697353.678855198] [TB3_2.amcl]: Subscribed to map topic.
+[lifecycle_manager-21] [INFO] [1780697353.683634299] [TB3_2.lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-19] [INFO] [1780697353.684058090] [TB3_2.map_server]: Activating
+[map_server-19] [INFO] [1780697353.684376242] [TB3_2.map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-20] [INFO] [1780697353.684658188] [TB3_2.amcl]: Received a 212 X 194 map @ 0.050 m/pix
+[rviz2-30] 
+[rviz2-30] (rviz2:236112): Gtk-WARNING **: 06:09:13.733: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+[lifecycle_manager-21] [INFO] [1780697353.789385893] [TB3_2.lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-21] [INFO] [1780697353.789472411] [TB3_2.lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-20] [INFO] [1780697353.790709756] [TB3_2.amcl]: Activating
+[amcl-20] [INFO] [1780697353.791375955] [TB3_2.amcl]: initialPoseReceived
+[amcl-20] [INFO] [1780697353.791540043] [TB3_2.amcl]: Setting pose (19.200000): -3.500 1.000 0.000
+[amcl-20] [INFO] [1780697353.792810402] [TB3_2.amcl]: Creating bond (amcl) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697353.812759077] [TB3_2.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-29] [INFO] [1780697353.813179513] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-22] [INFO] [1780697353.813972817] [TB3_2.controller_server]: Configuring controller interface
+[controller_server-22] [INFO] [1780697353.814841100] [TB3_2.controller_server]: getting goal checker plugins..
+[controller_server-22] [INFO] [1780697353.815694941] [TB3_2.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-22] [INFO] [1780697353.815835637] [TB3_2.local_costmap.local_costmap]: Configuring
+[controller_server-22] [INFO] [1780697353.823692760] [TB3_2.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-22] [INFO] [1780697353.831346462] [TB3_2.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-22] [INFO] [1780697353.840540295] [TB3_2.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-22] [INFO] [1780697353.840591703] [TB3_2.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-22] [INFO] [1780697353.841971286] [TB3_2.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-22] [ERROR] [1780697353.845492976] [TB3_2.local_costmap.local_costmap]: The configured inflation radius (0.200) is smaller than the computed inscribed radius (0.225) of your footprint, it is highly recommended to set inflation radius to be at least as big as the inscribed radius to avoid collisions
+[controller_server-22] [INFO] [1780697353.848903711] [TB3_2.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-22] [INFO] [1780697353.851050827] [TB3_2.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-22] [INFO] [1780697353.852461477] [TB3_2.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-22] [INFO] [1780697353.853550523] [TB3_2.controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-22] [INFO] [1780697353.862463808] [TB3_2.controller_server]: Controller Server has FollowPath  controllers available.
+[amcl-20] [INFO] [1780697353.868679565] [TB3_2.amcl]: createLaserObject
+[lifecycle_manager-29] [INFO] [1780697353.870453819] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-23] [INFO] [1780697353.870792233] [TB3_2.smoother_server]: Configuring smoother server
+[smoother_server-23] [INFO] [1780697353.878424905] [TB3_2.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-23] [INFO] [1780697353.879376850] [TB3_2.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-29] [INFO] [1780697353.886381664] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-24] [INFO] [1780697353.887001078] [TB3_2.planner_server]: Configuring
+[planner_server-24] [INFO] [1780697353.887143200] [TB3_2.global_costmap.global_costmap]: Configuring
+[planner_server-24] [INFO] [1780697353.896274477] [TB3_2.global_costmap.global_costmap]: Using plugin "static_layer"
+[lifecycle_manager-21] [INFO] [1780697353.899090180] [TB3_2.lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-21] [INFO] [1780697353.899250153] [TB3_2.lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-21] [INFO] [1780697353.899273721] [TB3_2.lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[planner_server-24] [INFO] [1780697353.901554306] [TB3_2.global_costmap.global_costmap]: Subscribing to the map topic (/TB3_2/map) with transient local durability
+[planner_server-24] [INFO] [1780697353.902933853] [TB3_2.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-24] [INFO] [1780697353.903015655] [TB3_2.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-24] [INFO] [1780697353.903854348] [TB3_2.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-24] [INFO] [1780697353.908573878] [TB3_2.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-24] [INFO] [1780697353.908696169] [TB3_2.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-24] [INFO] [1780697353.909905931] [TB3_2.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-24] [ERROR] [1780697353.914039180] [TB3_2.global_costmap.global_costmap]: The configured inflation radius (0.200) is smaller than the computed inscribed radius (0.225) of your footprint, it is highly recommended to set inflation radius to be at least as big as the inscribed radius to avoid collisions
+[planner_server-24] [INFO] [1780697353.919689764] [TB3_2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 212 X 194 at 0.050000 m/pix
+[planner_server-24] [INFO] [1780697353.920172759] [TB3_2.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-24] [INFO] [1780697353.920294000] [TB3_2.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-24] [INFO] [1780697353.921552015] [TB3_2.planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-29] [INFO] [1780697353.929927247] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-25] [INFO] [1780697353.930205198] [TB3_2.behavior_server]: Configuring
+[behavior_server-25] [INFO] [1780697353.940049360] [TB3_2.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-25] [INFO] [1780697353.941361171] [TB3_2.behavior_server]: Configuring spin
+[behavior_server-25] [INFO] [1780697353.947567277] [TB3_2.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-25] [INFO] [1780697353.948686180] [TB3_2.behavior_server]: Configuring backup
+[behavior_server-25] [INFO] [1780697353.951968951] [TB3_2.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-25] [INFO] [1780697353.952953999] [TB3_2.behavior_server]: Configuring drive_on_heading
+[behavior_server-25] [INFO] [1780697353.957630125] [TB3_2.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-25] [INFO] [1780697353.958912099] [TB3_2.behavior_server]: Configuring wait
+[behavior_server-25] [INFO] [1780697353.964294842] [TB3_2.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-25] [INFO] [1780697353.966006812] [TB3_2.behavior_server]: Configuring assisted_teleop
+[lifecycle_manager-29] [INFO] [1780697353.973796852] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-26] [INFO] [1780697353.974252163] [TB3_2.bt_navigator]: Configuring
+[lifecycle_manager-29] [INFO] [1780697354.056462051] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-27] [INFO] [1780697354.056751023] [TB3_2.waypoint_follower]: Configuring
+[waypoint_follower-27] [INFO] [1780697354.064445894] [TB3_2.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-29] [INFO] [1780697354.065969526] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-28] [INFO] [1780697354.066420241] [TB3_2.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-29] [INFO] [1780697354.071959026] [TB3_2.lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-22] [INFO] [1780697354.072578858] [TB3_2.controller_server]: Activating
+[controller_server-22] [INFO] [1780697354.072713695] [TB3_2.local_costmap.local_costmap]: Activating
+[controller_server-22] [INFO] [1780697354.072759818] [TB3_2.local_costmap.local_costmap]: Checking transform
+[controller_server-22] [INFO] [1780697354.072964171] [TB3_2.local_costmap.local_costmap]: start
+[rviz2-30] [INFO] [1780697354.111532082] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-30] [INFO] [1780697354.111670665] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-30] [INFO] [1780697354.166321213] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-22] [INFO] [1780697354.274281398] [TB3_2.controller_server]: Activating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-22] [INFO] [1780697354.274389106] [TB3_2.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697354.379409735] [TB3_2.lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-29] [INFO] [1780697354.379552054] [TB3_2.lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-23] [INFO] [1780697354.380062809] [TB3_2.smoother_server]: Activating
+[smoother_server-23] [INFO] [1780697354.380155253] [TB3_2.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697354.485286379] [TB3_2.lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-29] [INFO] [1780697354.485346386] [TB3_2.lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-24] [INFO] [1780697354.485623741] [TB3_2.planner_server]: Activating
+[planner_server-24] [INFO] [1780697354.485670266] [TB3_2.global_costmap.global_costmap]: Activating
+[planner_server-24] [INFO] [1780697354.485684389] [TB3_2.global_costmap.global_costmap]: Checking transform
+[planner_server-24] [INFO] [1780697354.485741093] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 19.934000 but the earliest data is at time 20.717000, when looking up transform from frame [TB3_2/base_footprint] to frame [map]
+[planner_server-24] [INFO] [1780697354.985886821] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 20.410000 but the earliest data is at time 20.717000, when looking up transform from frame [TB3_2/base_footprint] to frame [map]
+[planner_server-24] [INFO] [1780697355.485942675] [TB3_2.global_costmap.global_costmap]: start
+[rviz2-30] [INFO] [1780697355.530054053] [rviz2]: Trying to create a map of size 212 x 194 using 1 swatches
+[rviz2-30] [ERROR] [1780697355.551627432] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-30] active samplers with a different type refer to the same texture image unit
+[rviz2-30] [INFO] [1780697355.589822700] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[rviz2-30] [INFO] [1780697356.517212815] [rviz2]: Trying to create a map of size 212 x 194 using 1 swatches
+[planner_server-24] [INFO] [1780697356.536797554] [TB3_2.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-24] [INFO] [1780697356.537562209] [TB3_2.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697356.642818480] [TB3_2.lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-29] [INFO] [1780697356.642888960] [TB3_2.lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-25] [INFO] [1780697356.643462893] [TB3_2.behavior_server]: Activating
+[behavior_server-25] [INFO] [1780697356.643562359] [TB3_2.behavior_server]: Activating spin
+[behavior_server-25] [INFO] [1780697356.643611292] [TB3_2.behavior_server]: Activating backup
+[behavior_server-25] [INFO] [1780697356.643660129] [TB3_2.behavior_server]: Activating drive_on_heading
+[behavior_server-25] [INFO] [1780697356.643704709] [TB3_2.behavior_server]: Activating wait
+[behavior_server-25] [INFO] [1780697356.643742871] [TB3_2.behavior_server]: Activating assisted_teleop
+[behavior_server-25] [INFO] [1780697356.643787397] [TB3_2.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697356.748238296] [TB3_2.lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-29] [INFO] [1780697356.748365119] [TB3_2.lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-26] [INFO] [1780697356.748912235] [TB3_2.bt_navigator]: Activating
+[bt_navigator-26] [INFO] [1780697356.804871479] [TB3_2.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697356.909285173] [TB3_2.lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-29] [INFO] [1780697356.909433745] [TB3_2.lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-27] [INFO] [1780697356.910377846] [TB3_2.waypoint_follower]: Activating
+[waypoint_follower-27] [INFO] [1780697356.910525259] [TB3_2.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697357.016406211] [TB3_2.lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-29] [INFO] [1780697357.016567708] [TB3_2.lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-28] [INFO] [1780697357.017500993] [TB3_2.velocity_smoother]: Activating
+[velocity_smoother-28] [INFO] [1780697357.017673964] [TB3_2.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697357.125193768] [TB3_2.lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-29] [INFO] [1780697357.125361668] [TB3_2.lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-29] [INFO] [1780697357.125393821] [TB3_2.lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[rviz2-18] [INFO] [1780697358.514621271] [TB3_1.rviz2]: Message Filter dropping message: frame 'TB3_1/odom' at time 14.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-18] [INFO] [1780697359.336738090] [TB3_1.rviz2]: Message Filter dropping message: frame 'TB3_1/base_scan' at time 14.717 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-30] [INFO] [1780697363.953383916] [TB3_2.rviz2]: Message Filter dropping message: frame 'TB3_2/odom' at time 20.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-30] [INFO] [1780697364.774481355] [TB3_2.rviz2]: Message Filter dropping message: frame 'TB3_2/base_scan' at time 20.118 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [4_mission_controller-31]: process started with pid [236454]
+[4_mission_controller-31] [INFO] [1780697403.162909376] [mission_controller]: MissionController initializing...
+[4_mission_controller-31] [INFO] [1780697403.171418271] [mission_controller]: Action clients created for /TB3_1 and /TB3_2.
+[4_mission_controller-31] [INFO] [1780697406.171620202] [mission_controller]: Dispatching demo mission to both robots...
+[4_mission_controller-31] [INFO] [1780697406.172616014] [mission_controller]: [TB3_1] Sending goal → Loading Dock TB3_1  (x=-3.50, y=-0.50, yaw=0.00)
+[4_mission_controller-31] [INFO] [1780697406.172946499] [mission_controller]: [TB3_2] Sending goal → Loading Dock TB3_2  (x=-3.50, y=0.50, yaw=0.00)
+[bt_navigator-14] [INFO] [1780697406.173685662] [TB3_1.bt_navigator]: Begin navigating from current location (-3.50, -1.00) to (-3.50, -0.50)
+[bt_navigator-26] [INFO] [1780697406.173747620] [TB3_2.bt_navigator]: Begin navigating from current location (-3.50, 1.00) to (-3.50, 0.50)
+[controller_server-10] [INFO] [1780697406.194709864] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697406.194924439] [TB3_1.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-22] [INFO] [1780697406.194959647] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697406.195059169] [TB3_2.controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-10] [INFO] [1780697407.245117983] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697407.245238263] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697408.295057736] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697408.295227314] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697409.295063414] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697409.295250426] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697410.345116244] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697410.345232121] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697410.745505002] [TB3_2.controller_server]: Reached the goal!
+[bt_navigator-26] [INFO] [1780697410.784304783] [TB3_2.bt_navigator]: Goal succeeded
+[4_mission_controller-31] [INFO] [1780697410.784612976] [mission_controller]: [TB3_2] ✓ Goal 'Loading Dock TB3_2' SUCCEEDED.
+[4_mission_controller-31] [INFO] [1780697410.784762281] [mission_controller]: [TB3_2] Reached Loading Dock. Ready for pickup.
+[4_mission_controller-31] [INFO] [1780697410.785214651] [mission_controller]: [TB3_2] Sending goal → Machine M3  (x=-1.00, y=2.50, yaw=0.00)
+[bt_navigator-26] [INFO] [1780697410.786422335] [TB3_2.bt_navigator]: Begin navigating from current location (-3.48, 0.73) to (-1.00, 2.50)
+[controller_server-22] [INFO] [1780697410.807678872] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [INFO] [1780697411.295427234] [TB3_1.controller_server]: Reached the goal!
+[bt_navigator-14] [INFO] [1780697411.334204783] [TB3_1.bt_navigator]: Goal succeeded
+[4_mission_controller-31] [INFO] [1780697411.334219784] [mission_controller]: [TB3_1] ✓ Goal 'Loading Dock TB3_1' SUCCEEDED.
+[4_mission_controller-31] [INFO] [1780697411.334289060] [mission_controller]: [TB3_1] Reached Loading Dock. Ready for pickup.
+[4_mission_controller-31] [INFO] [1780697411.334859368] [mission_controller]: [TB3_1] Sending goal → Machine M1  (x=0.00, y=-1.50, yaw=0.00)
+[bt_navigator-14] [INFO] [1780697411.335397477] [TB3_1.bt_navigator]: Begin navigating from current location (-3.48, -0.69) to (0.00, -1.50)
+[controller_server-10] [INFO] [1780697411.356551619] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [INFO] [1780697411.857985132] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697412.406807446] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697412.907956031] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697413.456852474] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697413.907924342] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697414.456852834] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697414.957908689] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697415.506829613] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697415.957921636] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697416.506828241] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697417.007940544] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [INFO] [1780697417.556853471] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697417.757240236] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697417.857154231] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697417.907230427] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697417.957708468] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.007093910] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.057285472] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [INFO] [1780697418.057929327] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697418.107266948] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.157304716] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697418.157431071] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697418.157564029] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697418.175778743] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-10] [INFO] [1780697418.177170978] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697418.227720396] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.227929659] [TB3_1.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-10] [WARN] [1780697418.228134630] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.277899388] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.327747579] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.377647801] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.427898283] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.477657525] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697418.527750392] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [INFO] [1780697418.577418814] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697418.577722711] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697418.577743504] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697418.577778646] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697418.606113285] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-12] [INFO] [1780697418.606801776] [TB3_1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-22] [WARN] [1780697418.608481984] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697418.758323905] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697418.808423396] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697418.858222993] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697418.908248966] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697418.958337189] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697419.008282817] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [INFO] [1780697419.057916539] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-22] [WARN] [1780697419.058423354] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697419.108463714] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697419.108671750] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697419.108760012] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697419.127078508] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780697419.127813853] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697419.278395362] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697419.278640098] [TB3_2.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-22] [WARN] [1780697419.278931284] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697419.329513947] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697419.380701856] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697419.431308925] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697419.482032886] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697419.482205170] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697419.482333653] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697419.496978996] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-24] [INFO] [1780697419.497622006] [TB3_2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[planner_server-12] [WARN] [1780697419.588677853] [TB3_1.planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 1.0000 Hz
+[controller_server-10] [INFO] [1780697419.606426974] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697419.607035801] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697419.657064944] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697419.706890824] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697419.756940059] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697419.807111497] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697419.856932817] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697419.907295545] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697419.957079423] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697420.007378481] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697420.007493339] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697420.007606382] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697420.025711672] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-10] [INFO] [1780697420.026529049] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697420.227388744] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697420.227650480] [TB3_1.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-10] [WARN] [1780697420.228007448] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697420.278564141] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697420.329294072] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697420.380871491] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697420.381139262] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697420.381397137] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-13] [INFO] [1780697420.396945581] [TB3_1.behavior_server]: Running spin
+[behavior_server-13] [INFO] [1780697420.397416753] [TB3_1.behavior_server]: Turning 1.57 for spin behavior.
+[planner_server-24] [WARN] [1780697420.489233478] [TB3_2.planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 1.0000 Hz
+[controller_server-22] [INFO] [1780697420.507466901] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697420.508033863] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.558356109] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.607994783] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.658149120] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.708074954] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.757911396] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.808292701] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.857925347] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697420.908255537] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697420.908413982] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697420.908490462] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697420.926966216] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780697420.927581456] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697421.078097684] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697421.078361584] [TB3_2.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-22] [WARN] [1780697421.078659920] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697421.129163823] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697421.179883115] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697421.230320227] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697421.280977539] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697421.331477935] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697421.331581144] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697421.331626649] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-25] [INFO] [1780697421.347263061] [TB3_2.behavior_server]: Running spin
+[behavior_server-25] [INFO] [1780697421.347497702] [TB3_2.behavior_server]: Turning 1.57 for spin behavior.
+[behavior_server-13] [INFO] [1780697423.097776552] [TB3_1.behavior_server]: spin completed successfully
+[controller_server-10] [INFO] [1780697423.146194719] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[behavior_server-25] [INFO] [1780697424.147805247] [TB3_2.behavior_server]: spin completed successfully
+[controller_server-10] [INFO] [1780697424.196464052] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697424.197076384] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [INFO] [1780697425.246472492] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-22] [INFO] [1780697425.247258985] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697425.547101335] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697425.597953932] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697425.646856985] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697425.696902351] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697425.747387863] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697425.796971878] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697425.847883287] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697425.848216722] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697425.848529700] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697425.866037155] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-10] [INFO] [1780697425.866724462] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697425.947881819] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697425.997576882] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.027732788] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.027984113] [TB3_1.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-10] [WARN] [1780697426.028358238] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.047914644] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.078892272] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.097611137] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.129593740] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.147574698] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.180941786] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.197615586] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.231678501] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697426.231811745] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697426.231908706] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697426.236065060] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697426.236572541] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.247563918] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697426.247659152] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697426.247733488] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697426.257217978] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697426.257609157] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.287561261] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.307677419] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.337386994] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.357655631] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.387706030] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.407895281] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.436639849] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.457854528] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.486923605] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.507811669] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.536699155] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.557724941] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.587232247] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.607738466] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697426.637048927] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697426.637142652] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697426.637257853] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-13] [INFO] [1780697426.656144404] [TB3_1.behavior_server]: Running wait
+[controller_server-22] [WARN] [1780697426.657723346] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697426.657859219] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697426.657946533] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697426.676878914] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780697426.677369393] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697426.878663204] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.879169568] [TB3_2.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-22] [WARN] [1780697426.880091142] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.930950100] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697426.981715994] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697427.032444223] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697427.082922483] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697427.083017309] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697427.083095924] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-25] [INFO] [1780697427.097183054] [TB3_2.behavior_server]: Running wait
+[behavior_server-13] [INFO] [1780697431.756427802] [TB3_1.behavior_server]: wait completed successfully
+[controller_server-10] [INFO] [1780697431.806197935] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697431.806863665] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697431.857015640] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697431.907061207] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697431.957153354] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.006934060] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.056965345] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[behavior_server-25] [INFO] [1780697432.097379714] [TB3_2.behavior_server]: wait completed successfully
+[controller_server-10] [WARN] [1780697432.107006319] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [INFO] [1780697432.147194412] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697432.147687895] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.157004488] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.197813181] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.207050289] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697432.207264868] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697432.207369925] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697432.225747902] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-10] [INFO] [1780697432.226580599] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697432.247825251] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.297756948] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.347732471] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.397929941] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.427089308] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.427247814] [TB3_1.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-10] [WARN] [1780697432.427469676] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.447742093] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.478180506] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.497929585] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697432.498050205] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697432.498140796] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697432.516796319] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780697432.517506406] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697432.528779492] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.579387527] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697432.630531098] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697432.630647311] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697432.630733962] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-13] [INFO] [1780697432.645908575] [TB3_1.behavior_server]: Running backup
+[behavior_server-13] [INFO] [1780697432.646110459] [TB3_1.behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[controller_server-22] [WARN] [1780697432.679096240] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.679654163] [TB3_2.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-22] [WARN] [1780697432.681020234] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.731747578] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.782282913] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.833004336] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.883530543] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697432.934025790] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697432.934189309] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697432.934258029] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-25] [INFO] [1780697432.947025484] [TB3_2.behavior_server]: Running backup
+[behavior_server-25] [INFO] [1780697432.947202928] [TB3_2.behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[behavior_server-13] [INFO] [1780697439.446294975] [TB3_1.behavior_server]: backup completed successfully
+[controller_server-10] [INFO] [1780697439.496412867] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[behavior_server-25] [INFO] [1780697440.047296415] [TB3_2.behavior_server]: backup completed successfully
+[controller_server-22] [INFO] [1780697440.097319885] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697440.347463960] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.397221606] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.447242341] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.497117530] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [INFO] [1780697440.546691033] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697440.547589616] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.597133053] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.647177310] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.697481424] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697440.697616704] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697440.697781371] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697440.716024637] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-10] [INFO] [1780697440.716650452] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697440.827316031] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.827570071] [TB3_1.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-10] [WARN] [1780697440.827946366] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.878541989] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.929367433] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697440.980653251] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.031534230] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.048006755] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.082331042] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697441.082506074] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697441.082578119] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697441.095823466] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-12] [INFO] [1780697441.096017290] [TB3_1.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-22] [WARN] [1780697441.097886729] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [INFO] [1780697441.147585561] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-22] [WARN] [1780697441.148017037] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.198213576] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.247808971] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.297828364] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.347856165] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.397821812] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697441.397906096] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697441.397989958] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697441.416843652] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780697441.417358746] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697441.478053922] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.478314614] [TB3_2.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-22] [WARN] [1780697441.478621098] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.517996165] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.567873496] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[planner_server-12] [WARN] [1780697441.587500050] [TB3_1.planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 2.0000 Hz
+[controller_server-10] [INFO] [1780697441.606184614] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697441.606654456] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.617869848] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.657152213] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.667900167] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.706750907] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.717943094] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.756999649] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697441.767985465] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697441.768156673] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697441.768317692] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697441.786796871] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-24] [INFO] [1780697441.787035801] [TB3_2.global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-10] [WARN] [1780697441.806656861] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.856839466] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.906644659] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697441.956882806] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697442.007182847] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697442.007341720] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697442.007458112] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697442.025925010] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-10] [INFO] [1780697442.026584721] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [WARN] [1780697442.227221841] [TB3_1.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-10] [WARN] [1780697442.328647096] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697442.379541326] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697442.430333046] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697442.481106727] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[planner_server-24] [WARN] [1780697442.488315843] [TB3_2.planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 1.4286 Hz
+[controller_server-22] [INFO] [1780697442.507510766] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697442.507881145] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697442.531790106] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697442.557997910] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697442.583088628] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697442.608312838] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697442.633940539] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697442.658210656] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [INFO] [1780697442.684243967] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697442.685213161] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697442.685399141] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697442.685610209] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [WARN] [1780697442.708039040] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[behavior_server-13] [INFO] [1780697442.716196149] [TB3_1.behavior_server]: Running spin
+[behavior_server-13] [INFO] [1780697442.716347495] [TB3_1.behavior_server]: Turning 1.57 for spin behavior.
+[controller_server-22] [WARN] [1780697442.758103811] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697442.808423806] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697442.858070936] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697442.908014936] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697442.908155949] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697442.908257126] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697442.926902912] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780697442.927336477] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697443.077978220] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697443.078352891] [TB3_2.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-22] [WARN] [1780697443.078642324] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697443.129204856] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697443.180101904] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697443.231081950] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697443.281830637] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697443.281928780] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697443.282028743] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-25] [INFO] [1780697443.297250814] [TB3_2.behavior_server]: Running spin
+[behavior_server-25] [INFO] [1780697443.297434341] [TB3_2.behavior_server]: Turning 1.57 for spin behavior.
+[behavior_server-13] [INFO] [1780697445.516616990] [TB3_1.behavior_server]: spin completed successfully
+[controller_server-10] [INFO] [1780697445.566097068] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[behavior_server-25] [INFO] [1780697446.097666838] [TB3_2.behavior_server]: spin completed successfully
+[controller_server-22] [INFO] [1780697446.147099190] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [INFO] [1780697446.616324852] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697446.966861066] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.016749112] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.166692440] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [INFO] [1780697447.197345885] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697447.216773802] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.266762305] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.316593411] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.366589283] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.416556137] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.466572446] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.516564328] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697447.516642825] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697447.516689468] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-10] [INFO] [1780697447.535759227] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-10] [INFO] [1780697447.536336071] [TB3_1.controller_server]: Received a goal, begin computing control effort.
+[controller_server-10] [INFO] [1780697447.626489074] [TB3_1.controller_server]: Passing new path to controller.
+[controller_server-10] [WARN] [1780697447.627147788] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.627282782] [TB3_1.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-10] [WARN] [1780697447.627788035] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.636800265] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.686909066] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.736806617] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.787525515] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.836827217] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.886950147] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [WARN] [1780697447.937004945] [TB3_1.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-10] [ERROR] [1780697447.937170564] [TB3_1.controller_server]: Controller patience exceeded
+[controller_server-10] [WARN] [1780697447.937309815] [TB3_1.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[bt_navigator-14] [WARN] [1780697447.965600338] [TB3_1.bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[bt_navigator-14] [ERROR] [1780697447.965917261] [TB3_1.bt_navigator]: Goal failed
+[4_mission_controller-31] [ERROR] [1780697447.966061827] [mission_controller]: [TB3_1] ✗ Goal 'Machine M1' ABORTED by Nav2.
+[4_mission_controller-31] [WARN] [1780697447.966213345] [mission_controller]: [TB3_1] Failed to reach Machine M1.
+[controller_server-22] [WARN] [1780697447.997522318] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.047569147] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.097533673] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.147618080] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.197634374] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [INFO] [1780697448.247354989] [TB3_2.controller_server]: Passing new path to controller.
+[controller_server-22] [WARN] [1780697448.247782913] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.297558749] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.347677357] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697448.347826205] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697448.347900777] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-22] [INFO] [1780697448.367072544] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780697448.367822735] [TB3_2.controller_server]: Received a goal, begin computing control effort.
+[controller_server-22] [WARN] [1780697448.478783351] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.479115199] [TB3_2.controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-22] [WARN] [1780697448.479453502] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.529968966] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.580816763] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.631570593] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.682139803] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [WARN] [1780697448.732649805] [TB3_2.controller_server]: RegulatedPurePursuitController detected collision ahead!
+[controller_server-22] [ERROR] [1780697448.732778792] [TB3_2.controller_server]: Controller patience exceeded
+[controller_server-22] [WARN] [1780697448.732837456] [TB3_2.controller_server]: [follow_path] [ActionServer] Aborting handle.
+[bt_navigator-26] [WARN] [1780697448.756764420] [TB3_2.bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[bt_navigator-26] [ERROR] [1780697448.757154757] [TB3_2.bt_navigator]: Goal failed
+[4_mission_controller-31] [ERROR] [1780697448.757182936] [mission_controller]: [TB3_2] ✗ Goal 'Machine M3' ABORTED by Nav2.
+[4_mission_controller-31] [WARN] [1780697448.757308108] [mission_controller]: [TB3_2] Failed to reach Machine M3.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[bt_navigator-26] [INFO] [1780697632.836706535] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-26] [INFO] [1780697632.836808952] [TB3_2.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-26] [INFO] [1780697632.837216607] [TB3_2.bt_navigator]: Deactivating
+[bt_navigator-26] [INFO] [1780697632.837327073] [TB3_2.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[4_mission_controller-31] [INFO] [1780697632.836718429] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-17] [INFO] [1780697632.836722959] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-17] [INFO] [1780697632.836832445] [TB3_1.lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-17] [INFO] [1780697632.836917753] [TB3_1.lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[velocity_smoother-28] [INFO] [1780697632.836709424] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-28] [INFO] [1780697632.836880116] [TB3_2.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-28] [INFO] [1780697632.836997786] [TB3_2.velocity_smoother]: Deactivating
+[velocity_smoother-28] [INFO] [1780697632.837036978] [TB3_2.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[map_server-19] [INFO] [1780697632.836729067] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-19] [INFO] [1780697632.836877992] [TB3_2.map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-19] [INFO] [1780697632.836987401] [TB3_2.map_server]: Deactivating
+[map_server-19] [INFO] [1780697632.837019691] [TB3_2.map_server]: Destroying bond (map_server) to lifecycle manager.
+[smoother_server-23] [INFO] [1780697632.836738971] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-23] [INFO] [1780697632.836840441] [TB3_2.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-23] [INFO] [1780697632.836955956] [TB3_2.smoother_server]: Deactivating
+[smoother_server-23] [INFO] [1780697632.836982758] [TB3_2.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697632.836751585] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-29] [INFO] [1780697632.836838944] [TB3_2.lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-29] [INFO] [1780697632.836920932] [TB3_2.lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[controller_server-22] [INFO] [1780697632.836759474] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-22] [INFO] [1780697632.836835539] [TB3_2.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-22] [INFO] [1780697632.836958793] [TB3_2.controller_server]: Deactivating
+[controller_server-22] [INFO] [1780697632.836991417] [TB3_2.controller_server]: Deactivating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-22] [INFO] [1780697632.837028790] [TB3_2.local_costmap.local_costmap]: Deactivating
+[planner_server-12] [INFO] [1780697632.836768822] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1780697632.836833524] [TB3_1.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-12] [INFO] [1780697632.836952786] [TB3_1.planner_server]: Deactivating
+[planner_server-12] [INFO] [1780697632.837004968] [TB3_1.global_costmap.global_costmap]: Deactivating
+[controller_server-10] [INFO] [1780697632.836779085] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-10] [INFO] [1780697632.836839234] [TB3_1.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-10] [INFO] [1780697632.836957550] [TB3_1.controller_server]: Deactivating
+[controller_server-10] [INFO] [1780697632.836979942] [TB3_1.controller_server]: Deactivating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-10] [INFO] [1780697632.837008640] [TB3_1.local_costmap.local_costmap]: Deactivating
+[rviz2-18] [INFO] [1780697632.836774714] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-25] [INFO] [1780697632.836819435] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-25] [INFO] [1780697632.836885766] [TB3_2.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-25] [INFO] [1780697632.836988802] [TB3_2.behavior_server]: Deactivating
+[behavior_server-25] [INFO] [1780697632.837046362] [TB3_2.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[waypoint_follower-15] [INFO] [1780697632.836847043] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-15] [INFO] [1780697632.836950896] [TB3_1.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-15] [INFO] [1780697632.837034520] [TB3_1.waypoint_follower]: Deactivating
+[waypoint_follower-15] [INFO] [1780697632.837054689] [TB3_1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-27] [INFO] [1780697632.836850337] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-27] [INFO] [1780697632.836953836] [TB3_2.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-27] [INFO] [1780697632.837048361] [TB3_2.waypoint_follower]: Deactivating
+[waypoint_follower-27] [INFO] [1780697632.837069348] [TB3_2.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[robot_state_publisher-5] [INFO] [1780697632.836977694] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-3] [INFO] [1780697632.837087447] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-13] [INFO] [1780697632.837153487] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-13] [INFO] [1780697632.837288508] [TB3_1.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-13] [INFO] [1780697632.837489696] [TB3_1.behavior_server]: Deactivating
+[behavior_server-13] [INFO] [1780697632.837569823] [TB3_1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[rviz2-30] [INFO] [1780697632.837222292] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-14] [INFO] [1780697632.837250989] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-14] [INFO] [1780697632.837406138] [TB3_1.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-14] [INFO] [1780697632.837602734] [TB3_1.bt_navigator]: Deactivating
+[bt_navigator-14] [INFO] [1780697632.837656197] [TB3_1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[planner_server-24] [INFO] [1780697632.837277256] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-24] [INFO] [1780697632.837432731] [TB3_2.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-24] [INFO] [1780697632.837604747] [TB3_2.planner_server]: Deactivating
+[planner_server-24] [INFO] [1780697632.837686354] [TB3_2.global_costmap.global_costmap]: Deactivating
+[INFO] [4_mission_controller-31]: sending signal 'SIGINT' to process[4_mission_controller-31]
+[INFO] [rviz2-30]: sending signal 'SIGINT' to process[rviz2-30]
+[INFO] [lifecycle_manager-29]: sending signal 'SIGINT' to process[lifecycle_manager-29]
+[INFO] [velocity_smoother-28]: sending signal 'SIGINT' to process[velocity_smoother-28]
+[INFO] [waypoint_follower-27]: sending signal 'SIGINT' to process[waypoint_follower-27]
+[INFO] [bt_navigator-26]: sending signal 'SIGINT' to process[bt_navigator-26]
+[INFO] [behavior_server-25]: sending signal 'SIGINT' to process[behavior_server-25]
+[INFO] [planner_server-24]: sending signal 'SIGINT' to process[planner_server-24]
+[INFO] [smoother_server-23]: sending signal 'SIGINT' to process[smoother_server-23]
+[INFO] [controller_server-22]: sending signal 'SIGINT' to process[controller_server-22]
+[INFO] [lifecycle_manager-21]: sending signal 'SIGINT' to process[lifecycle_manager-21]
+[INFO] [amcl-20]: sending signal 'SIGINT' to process[amcl-20]
+[INFO] [map_server-19]: sending signal 'SIGINT' to process[map_server-19]
+[INFO] [rviz2-18]: sending signal 'SIGINT' to process[rviz2-18]
+[INFO] [lifecycle_manager-17]: sending signal 'SIGINT' to process[lifecycle_manager-17]
+[INFO] [velocity_smoother-16]: sending signal 'SIGINT' to process[velocity_smoother-16]
+[INFO] [waypoint_follower-15]: sending signal 'SIGINT' to process[waypoint_follower-15]
+[INFO] [bt_navigator-14]: sending signal 'SIGINT' to process[bt_navigator-14]
+[INFO] [behavior_server-13]: sending signal 'SIGINT' to process[behavior_server-13]
+[ERROR] [waypoint_follower-15]: process has died [pid 235885, exit code -2, cmd '/opt/ros/humble/lib/nav2_waypoint_follower/waypoint_follower --ros-args --log-level info --ros-args -r __node:=waypoint_follower -r __ns:=/TB3_1 --params-file /tmp/launch_params_djakzl82 -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [planner_server-12]: sending signal 'SIGINT' to process[planner_server-12]
+[INFO] [smoother_server-11]: sending signal 'SIGINT' to process[smoother_server-11]
+[ERROR] [behavior_server-13]: process has died [pid 235881, exit code -2, cmd '/opt/ros/humble/lib/nav2_behaviors/behavior_server --ros-args --log-level info --ros-args -r __node:=behavior_server -r __ns:=/TB3_1 --params-file /tmp/launch_params_djakzl82 -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [controller_server-10]: sending signal 'SIGINT' to process[controller_server-10]
+[ERROR] [rviz2-18]: process has died [pid 235891, exit code -2, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_20/share/dual_robot_nav/rviz/tb3_1_nav.rviz --ros-args -r __node:=rviz2 -r __ns:=/TB3_1 --params-file /tmp/launch_params_duozvr0l -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [smoother_server-11]: process has died [pid 235877, exit code -2, cmd '/opt/ros/humble/lib/nav2_smoother/smoother_server --ros-args --log-level info --ros-args -r __node:=smoother_server -r __ns:=/TB3_1 --params-file /tmp/launch_params_djakzl82 -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [lifecycle_manager-9]: sending signal 'SIGINT' to process[lifecycle_manager-9]
+[INFO] [amcl-8]: sending signal 'SIGINT' to process[amcl-8]
+[INFO] [map_server-7]: sending signal 'SIGINT' to process[map_server-7]
+[INFO] [robot_state_publisher-5]: sending signal 'SIGINT' to process[robot_state_publisher-5]
+[ERROR] [lifecycle_manager-9]: process has died [pid 235873, exit code -2, cmd '/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -r __node:=lifecycle_manager_localization -r __ns:=/TB3_1 --params-file /tmp/launch_params_3goxab7n -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [amcl-8]: process has died [pid 235871, exit code -2, cmd '/opt/ros/humble/lib/nav2_amcl/amcl --ros-args -r __node:=amcl -r __ns:=/TB3_1 --params-file /tmp/launch_params_z307_x4v -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[ERROR] [map_server-7]: process has died [pid 235869, exit code -2, cmd '/opt/ros/humble/lib/nav2_map_server/map_server --ros-args -r __node:=map_server -r __ns:=/TB3_1 --params-file /tmp/launch_params_z307_x4v -r /tf:=tf -r /tf_static:=tf_static'].
+[INFO] [gzclient-2]: sending signal 'SIGINT' to process[gzclient-2]
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[smoother_server-11] [INFO] [1780697632.837474611] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-11] [INFO] [1780697632.837608836] [TB3_1.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-11] [INFO] [1780697632.837761932] [TB3_1.smoother_server]: Deactivating
+[smoother_server-11] [INFO] [1780697632.837822092] [TB3_1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[map_server-7] [INFO] [1780697632.837610373] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-7] [INFO] [1780697632.837784856] [TB3_1.map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-7] [INFO] [1780697632.837992441] [TB3_1.map_server]: Deactivating
+[map_server-7] [INFO] [1780697632.838044290] [TB3_1.map_server]: Destroying bond (map_server) to lifecycle manager.
+[lifecycle_manager-21] [INFO] [1780697632.837891049] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-21] [INFO] [1780697632.838261247] [TB3_2.lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[lifecycle_manager-21] [INFO] [1780697632.838435819] [TB3_2.lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[amcl-20] [INFO] [1780697632.837934027] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[amcl-20] [INFO] [1780697632.839970510] [TB3_2.amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-20] [INFO] [1780697632.840107449] [TB3_2.amcl]: Deactivating
+[amcl-20] [INFO] [1780697632.840158231] [TB3_2.amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-8] [INFO] [1780697632.837957473] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[amcl-8] [INFO] [1780697632.838138871] [TB3_1.amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-8] [INFO] [1780697632.839427199] [TB3_1.amcl]: Deactivating
+[amcl-8] [INFO] [1780697632.839501326] [TB3_1.amcl]: Destroying bond (amcl) to lifecycle manager.
+[lifecycle_manager-9] [INFO] [1780697632.837947169] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-9] [INFO] [1780697632.838186475] [TB3_1.lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[lifecycle_manager-9] [INFO] [1780697632.838381595] [TB3_1.lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[velocity_smoother-16] [INFO] [1780697632.839989248] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-16] [INFO] [1780697632.840240344] [TB3_1.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-16] [INFO] [1780697632.847324848] [TB3_1.velocity_smoother]: Deactivating
+[velocity_smoother-16] [INFO] [1780697632.847482418] [TB3_1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-16] [INFO] [1780697632.864431748] [TB3_1.velocity_smoother]: Cleaning up
+[velocity_smoother-16] [INFO] [1780697632.864548097] [TB3_1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[smoother_server-11] [INFO] [1780697632.848775760] [TB3_1.smoother_server]: Cleaning up
+[INFO] [gzclient-2]: process has finished cleanly [pid 235566]
+[bt_navigator-14] [INFO] [1780697632.849014334] [TB3_1.bt_navigator]: Cleaning up
+[waypoint_follower-15] [INFO] [1780697632.849199267] [TB3_1.waypoint_follower]: Cleaning up
+[waypoint_follower-15] [INFO] [1780697632.889344311] [TB3_1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[smoother_server-23] [INFO] [1780697632.849475153] [TB3_2.smoother_server]: Cleaning up
+[waypoint_follower-27] [INFO] [1780697632.850148290] [TB3_2.waypoint_follower]: Cleaning up
+[waypoint_follower-27] [INFO] [1780697632.875079762] [TB3_2.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[behavior_server-13] [INFO] [1780697632.851861242] [TB3_1.behavior_server]: Cleaning up
+[behavior_server-13] [INFO] [1780697632.889326322] [TB3_1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-25] [INFO] [1780697632.857488128] [TB3_2.behavior_server]: Cleaning up
+[behavior_server-25] [INFO] [1780697632.883439725] [TB3_2.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[velocity_smoother-28] [INFO] [1780697632.857488176] [TB3_2.velocity_smoother]: Cleaning up
+[velocity_smoother-28] [INFO] [1780697632.857811504] [TB3_2.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[map_server-19] [INFO] [1780697632.857869818] [TB3_2.map_server]: Cleaning up
+[map_server-19] [INFO] [1780697632.858000599] [TB3_2.map_server]: Destroying bond (map_server) to lifecycle manager.
+[bt_navigator-26] [INFO] [1780697632.858090008] [TB3_2.bt_navigator]: Cleaning up
+[map_server-7] [INFO] [1780697632.858555315] [TB3_1.map_server]: Cleaning up
+[map_server-7] [INFO] [1780697632.858707162] [TB3_1.map_server]: Destroying bond (map_server) to lifecycle manager.
+[amcl-20] [INFO] [1780697632.860588000] [TB3_2.amcl]: Cleaning up
+[amcl-8] [INFO] [1780697632.863418673] [TB3_1.amcl]: Cleaning up
+[amcl-8] [INFO] [1780697632.892500791] [TB3_1.amcl]: Destroying bond (amcl) to lifecycle manager.
+[controller_server-22] [INFO] [1780697632.873359012] [TB3_2.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-22] [INFO] [1780697632.887079861] [TB3_2.controller_server]: Cleaning up
+[controller_server-22] [INFO] [1780697632.889366343] [TB3_2.controller_server]: Cleaning up controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[smoother_server-23] [INFO] [1780697632.896426779] [TB3_2.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[controller_server-22] [INFO] [1780697632.899145946] [TB3_2.local_costmap.local_costmap]: Cleaning up
+[smoother_server-11] [INFO] [1780697632.899601449] [TB3_1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[4_mission_controller-31] [INFO] [1780697632.913045397] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[amcl-20] [INFO] [1780697632.914563106] [TB3_2.amcl]: Destroying bond (amcl) to lifecycle manager.
+[rviz2-30] [INFO] [1780697632.922490992] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-22] [INFO] [1780697632.952480538] [TB3_2.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[lifecycle_manager-21] [INFO] [1780697632.998152851] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-21] [INFO] [1780697633.012179241] [TB3_2.lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[controller_server-10] [INFO] [1780697633.019435338] [TB3_1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-10] [INFO] [1780697633.033269658] [TB3_1.controller_server]: Cleaning up
+[controller_server-10] [INFO] [1780697633.033348643] [TB3_1.controller_server]: Cleaning up controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-10] [INFO] [1780697633.033686359] [TB3_1.local_costmap.local_costmap]: Cleaning up
+[map_server-19] [INFO] [1780697633.037837129] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-19] [INFO] [1780697633.037938638] [TB3_2.map_server]: Destroying
+[smoother_server-23] [INFO] [1780697633.038530725] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-23] [INFO] [1780697633.039253922] [TB3_2.smoother_server]: Destroying
+[behavior_server-25] [INFO] [1780697633.039465358] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-25] [INFO] [1780697633.050265592] [TB3_2.behavior_server]: Destroying
+[waypoint_follower-27] [INFO] [1780697633.039803850] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-27] [INFO] [1780697633.042137338] [TB3_2.waypoint_follower]: Destroying
+[map_server-7] [INFO] [1780697633.040001175] [TB3_1.map_server]: Destroying
+[lifecycle_manager-9] [INFO] [1780697633.040436453] [TB3_1.lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[smoother_server-11] [INFO] [1780697633.040480249] [TB3_1.smoother_server]: Destroying
+[amcl-8] [INFO] [1780697633.040592645] [TB3_1.amcl]: Destroying
+[velocity_smoother-28] [INFO] [1780697633.040758771] [TB3_2.velocity_smoother]: Destroying
+[velocity_smoother-16] [INFO] [1780697633.042510791] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-16] [INFO] [1780697633.042709634] [TB3_1.velocity_smoother]: Destroying
+[waypoint_follower-15] [INFO] [1780697633.042598508] [TB3_1.waypoint_follower]: Destroying
+[amcl-20] [INFO] [1780697633.043405807] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[amcl-20] [INFO] [1780697633.044595476] [TB3_2.amcl]: Destroying
+[behavior_server-13] [INFO] [1780697633.046600888] [TB3_1.behavior_server]: Destroying
+[controller_server-10] [INFO] [1780697633.094382068] [TB3_1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[lifecycle_manager-29] [INFO] [1780697633.107846437] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-26] [INFO] [1780697633.118024617] [TB3_2.bt_navigator]: Completed Cleaning up
+[bt_navigator-26] [INFO] [1780697633.118270649] [TB3_2.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-14] [INFO] [1780697633.120698556] [TB3_1.bt_navigator]: Completed Cleaning up
+[bt_navigator-14] [INFO] [1780697633.120879928] [TB3_1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[controller_server-22] [INFO] [1780697633.138540381] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-22] [INFO] [1780697633.139060721] [TB3_2.local_costmap.local_costmap]: Destroying
+[robot_state_publisher-5] [INFO] [1780697633.144238517] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-3] [INFO] [1780697633.151074315] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-22] [INFO] [1780697633.167764285] [TB3_2.controller_server]: Destroying
+[lifecycle_manager-29] [INFO] [1780697633.195539889] [TB3_2.lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[controller_server-10] [INFO] [1780697633.220458109] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-10] [INFO] [1780697633.220654052] [TB3_1.local_costmap.local_costmap]: Destroying
+[lifecycle_manager-17] [INFO] [1780697633.222207023] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-17] [INFO] [1780697633.226822748] [TB3_1.lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[bt_navigator-26] [INFO] [1780697633.238082516] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-26] [INFO] [1780697633.239700646] [TB3_2.bt_navigator]: Destroying
+[bt_navigator-14] [INFO] [1780697633.240296741] [TB3_1.bt_navigator]: Destroying
+[controller_server-10] [INFO] [1780697633.249923272] [TB3_1.controller_server]: Destroying
+[planner_server-24] [INFO] [1780697633.486218339] [TB3_2.planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-24] [INFO] [1780697633.486335226] [TB3_2.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-24] [INFO] [1780697633.496600642] [TB3_2.planner_server]: Cleaning up
+[planner_server-24] [INFO] [1780697633.515194515] [TB3_2.global_costmap.global_costmap]: Cleaning up
+[planner_server-24] [INFO] [1780697633.520712491] [TB3_2.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-24] [INFO] [1780697633.521221269] [TB3_2.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-24] [INFO] [1780697633.535326836] [TB3_2.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-12] [INFO] [1780697633.580546290] [TB3_1.planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1780697633.580676753] [TB3_1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-12] [INFO] [1780697633.591038393] [TB3_1.planner_server]: Cleaning up
+[planner_server-12] [INFO] [1780697633.610056640] [TB3_1.global_costmap.global_costmap]: Cleaning up
+[planner_server-12] [INFO] [1780697633.614867702] [TB3_1.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1780697633.615330983] [TB3_1.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1780697633.629868485] [TB3_1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-24] [INFO] [1780697633.686624956] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-24] [INFO] [1780697633.688839731] [TB3_2.global_costmap.global_costmap]: Destroying
+[planner_server-24] [INFO] [1780697633.715899329] [TB3_2.planner_server]: Destroying
+[planner_server-12] [INFO] [1780697633.781049748] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-12] [INFO] [1780697633.783171261] [TB3_1.global_costmap.global_costmap]: Destroying
+[planner_server-12] [INFO] [1780697633.807607366] [TB3_1.planner_server]: Destroying
+[INFO] [4_mission_controller-31]: process has finished cleanly [pid 236454]
+[INFO] [robot_state_publisher-5]: process has finished cleanly [pid 235831]
+[INFO] [rviz2-30]: process has finished cleanly [pid 236112]
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 235802]
+[INFO] [lifecycle_manager-21]: process has finished cleanly [pid 236094]
+[INFO] [velocity_smoother-16]: process has finished cleanly [pid 235887]
+[INFO] [velocity_smoother-28]: process has finished cleanly [pid 236108]
+[INFO] [smoother_server-23]: process has finished cleanly [pid 236098]
+[INFO] [waypoint_follower-27]: process has finished cleanly [pid 236106]
+[INFO] [behavior_server-25]: process has finished cleanly [pid 236102]
+[INFO] [map_server-19]: process has finished cleanly [pid 236090]
+[INFO] [controller_server-22]: process has finished cleanly [pid 236096]
+[INFO] [lifecycle_manager-29]: process has finished cleanly [pid 236110]
+[INFO] [lifecycle_manager-17]: process has finished cleanly [pid 235889]
+[INFO] [bt_navigator-26]: process has finished cleanly [pid 236104]
+[INFO] [bt_navigator-14]: process has finished cleanly [pid 235883]
+[INFO] [controller_server-10]: process has finished cleanly [pid 235875]
+[INFO] [gzserver-1]: process has finished cleanly [pid 235564]
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;36m[0m[1;32m[0m
+[gzserver-1] [1;33m[0m[1;31m[0m
+[INFO] [planner_server-24]: process has finished cleanly [pid 236100]
+[INFO] [planner_server-12]: process has finished cleanly [pid 235879]
+[INFO] [amcl-20]: process has finished cleanly [pid 236092]

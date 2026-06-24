@@ -1,0 +1,1 @@
+/home/anaskh007/dual_robot_ws/install/dual_robot_nav/share/dual_robot_nav/launch/23_navigation.launch.py

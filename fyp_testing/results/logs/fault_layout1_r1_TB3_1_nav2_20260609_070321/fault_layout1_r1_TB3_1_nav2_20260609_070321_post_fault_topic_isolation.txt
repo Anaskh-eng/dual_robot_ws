@@ -1,0 +1,494 @@
+== Post-fault topic list ==
+/TB3_1/amcl_pose
+/TB3_1/amcl/transition_event
+/TB3_1/behavior_server/transition_event
+/TB3_1/bond
+/TB3_1/camera/camera_info
+/TB3_1/camera/image_raw
+/TB3_1/cmd_vel
+/TB3_1/cmd_vel_nav
+/TB3_1/cmd_vel_teleop
+/TB3_1/global_costmap/costmap_raw
+/TB3_1/global_costmap/published_footprint
+/TB3_1/imu
+/TB3_1/initialpose
+/TB3_1/joint_states
+/TB3_1/local_costmap/costmap_raw
+/TB3_1/local_costmap/published_footprint
+/TB3_1/map
+/TB3_1/map_server/transition_event
+/TB3_1/odom
+/TB3_1/particle_cloud
+/TB3_1/plan
+/TB3_1/plan_smoothed
+/TB3_1/preempt_teleop
+/TB3_1/robot_description
+/TB3_1/scan
+/TB3_1/smoother_server/transition_event
+/TB3_1/tf
+/TB3_1/tf_static
+/TB3_1/velocity_smoother/transition_event
+/TB3_1/waypoint_follower/transition_event
+/TB3_2/amcl_pose
+/TB3_2/amcl/transition_event
+/TB3_2/behavior_server/transition_event
+/TB3_2/behavior_tree_log
+/TB3_2/bond
+/TB3_2/bt_navigator/transition_event
+/TB3_2/camera/camera_info
+/TB3_2/camera/image_raw
+/TB3_2/cmd_vel
+/TB3_2/cmd_vel_nav
+/TB3_2/cmd_vel_teleop
+/TB3_2/controller_server/transition_event
+/TB3_2/global_costmap/costmap
+/TB3_2/global_costmap/costmap_raw
+/TB3_2/global_costmap/costmap_updates
+/TB3_2/global_costmap/footprint
+/TB3_2/global_costmap/global_costmap/transition_event
+/TB3_2/global_costmap/published_footprint
+/TB3_2/goal_pose
+/TB3_2/imu
+/TB3_2/initialpose
+/TB3_2/joint_states
+/TB3_2/local_costmap/clearing_endpoints
+/TB3_2/local_costmap/costmap
+/TB3_2/local_costmap/costmap_raw
+/TB3_2/local_costmap/costmap_updates
+/TB3_2/local_costmap/footprint
+/TB3_2/local_costmap/local_costmap/transition_event
+/TB3_2/local_costmap/published_footprint
+/TB3_2/local_costmap/voxel_grid
+/TB3_2/lookahead_collision_arc
+/TB3_2/lookahead_point
+/TB3_2/map
+/TB3_2/map_server/transition_event
+/TB3_2/odom
+/TB3_2/particle_cloud
+/TB3_2/plan
+/TB3_2/planner_server/transition_event
+/TB3_2/plan_smoothed
+/TB3_2/preempt_teleop
+/TB3_2/received_global_plan
+/TB3_2/robot_description
+/TB3_2/scan
+/TB3_2/smoother_server/transition_event
+/TB3_2/speed_limit
+/TB3_2/tf
+/TB3_2/tf_static
+/TB3_2/velocity_smoother/transition_event
+/TB3_2/waypoint_follower/transition_event
+
+== cmd_vel publisher/subscriber details ==
+--- /TB3_1/cmd_vel
+Type: geometry_msgs/msg/Twist
+
+Publisher count: 6
+
+Node name: behavior_server
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.1b.b6.7e.16.fe.38.18.16.9a.0d.00.00.2f.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.1b.b6.7e.16.fe.38.18.16.9a.0d.00.00.38.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.1b.b6.7e.16.fe.38.18.16.9a.0d.00.00.41.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.1b.b6.7e.16.fe.38.18.16.9a.0d.00.00.4a.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.1b.b6.7e.16.fe.38.18.16.9a.0d.00.00.53.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: velocity_smoother
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.b3.29.da.93.d0.d1.d5.83.98.da.00.00.21.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 2
+
+Node name: turtlebot3_diff_drive
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: SUBSCRIPTION
+GID: 01.10.7b.e6.d1.a9.06.cc.b7.b8.37.6b.00.00.6b.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: SUBSCRIPTION
+GID: 01.10.f5.2e.6d.0c.e5.40.fd.af.e2.19.00.00.1a.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+
+--- /TB3_2/cmd_vel
+Type: geometry_msgs/msg/Twist
+
+Publisher count: 6
+
+Node name: behavior_server
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.29.41.e9.de.44.f1.76.2c.77.90.00.00.2f.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.29.41.e9.de.44.f1.76.2c.77.90.00.00.38.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.29.41.e9.de.44.f1.76.2c.77.90.00.00.41.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.29.41.e9.de.44.f1.76.2c.77.90.00.00.4a.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: behavior_server
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.29.41.e9.de.44.f1.76.2c.77.90.00.00.53.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: velocity_smoother
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: PUBLISHER
+GID: 01.10.be.1a.80.37.9d.dd.75.25.52.8d.00.00.21.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 2
+
+Node name: turtlebot3_diff_drive
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: SUBSCRIPTION
+GID: 01.10.7b.e6.d1.a9.06.cc.b7.b8.37.6b.00.00.c5.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: geometry_msgs/msg/Twist
+Endpoint type: SUBSCRIPTION
+GID: 01.10.f5.2e.6d.0c.e5.40.fd.af.e2.19.00.00.1d.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+
+--- /TB3_1/odom
+Type: nav_msgs/msg/Odometry
+
+Publisher count: 1
+
+Node name: turtlebot3_diff_drive
+Node namespace: /TB3_1
+Topic type: nav_msgs/msg/Odometry
+Endpoint type: PUBLISHER
+GID: 01.10.7b.e6.d1.a9.06.cc.b7.b8.37.6b.00.00.6d.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 1
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: nav_msgs/msg/Odometry
+Endpoint type: SUBSCRIPTION
+GID: 01.10.f5.2e.6d.0c.e5.40.fd.af.e2.19.00.00.17.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+
+--- /TB3_2/odom
+Type: nav_msgs/msg/Odometry
+
+Publisher count: 1
+
+Node name: turtlebot3_diff_drive
+Node namespace: /TB3_2
+Topic type: nav_msgs/msg/Odometry
+Endpoint type: PUBLISHER
+GID: 01.10.7b.e6.d1.a9.06.cc.b7.b8.37.6b.00.00.c6.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 3
+
+Node name: controller_server
+Node namespace: /TB3_2
+Topic type: nav_msgs/msg/Odometry
+Endpoint type: SUBSCRIPTION
+GID: 01.10.a2.28.14.67.ef.c1.b3.87.87.2f.00.00.53.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: bt_navigator
+Node namespace: /TB3_2
+Topic type: nav_msgs/msg/Odometry
+Endpoint type: SUBSCRIPTION
+GID: 01.10.d4.1c.f0.77.4f.cd.77.7f.8f.6d.00.00.23.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: nav_msgs/msg/Odometry
+Endpoint type: SUBSCRIPTION
+GID: 01.10.f5.2e.6d.0c.e5.40.fd.af.e2.19.00.00.18.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: VOLATILE
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+
+--- /TB3_1/amcl_pose
+Type: geometry_msgs/msg/PoseWithCovarianceStamped
+
+Publisher count: 1
+
+Node name: amcl
+Node namespace: /TB3_1
+Topic type: geometry_msgs/msg/PoseWithCovarianceStamped
+Endpoint type: PUBLISHER
+GID: 01.10.15.43.4f.43.71.93.05.e0.ba.87.00.00.28.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 1
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: geometry_msgs/msg/PoseWithCovarianceStamped
+Endpoint type: SUBSCRIPTION
+GID: 01.10.f5.2e.6d.0c.e5.40.fd.af.e2.19.00.00.19.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+
+--- /TB3_2/amcl_pose
+Type: geometry_msgs/msg/PoseWithCovarianceStamped
+
+Publisher count: 1
+
+Node name: amcl
+Node namespace: /TB3_2
+Topic type: geometry_msgs/msg/PoseWithCovarianceStamped
+Endpoint type: PUBLISHER
+GID: 01.10.9d.e3.83.56.52.36.a0.4a.ce.bd.00.00.28.03.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (1)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+Subscription count: 1
+
+Node name: rosbag2_recorder
+Node namespace: /
+Topic type: geometry_msgs/msg/PoseWithCovarianceStamped
+Endpoint type: SUBSCRIPTION
+GID: 01.10.f5.2e.6d.0c.e5.40.fd.af.e2.19.00.00.1c.04.00.00.00.00.00.00.00.00
+QoS profile:
+  Reliability: RELIABLE
+  History (Depth): KEEP_LAST (10)
+  Durability: TRANSIENT_LOCAL
+  Lifespan: Infinite
+  Deadline: Infinite
+  Liveliness: AUTOMATIC
+  Liveliness lease duration: Infinite
+
+

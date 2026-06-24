@@ -1,0 +1,1047 @@
+[INFO] [launch]: All log files can be found below /home/anaskh007/.ros/log/2026-06-05-22-50-30-447700-anaskh007-ubuntu-76676
+[INFO] [launch]: Default logging verbosity is set to INFO
+[SPAWN] Using URDF: /opt/ros/humble/share/turtlebot3_gazebo/urdf/turtlebot3_waffle_pi.urdf
+[SPAWN] Using Gazebo SDF: /opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi/model.sdf
+[SPAWN] Generated namespaced SDF for TB3_1: /tmp/dual_robot_nav_sdf/TB3_1.sdf
+[SPAWN] Generated namespaced SDF for TB3_2: /tmp/dual_robot_nav_sdf/TB3_2.sdf
+[INFO] [gzserver-1]: process started with pid [76690]
+[INFO] [gzclient-2]: process started with pid [76692]
+[gzserver-1] Gazebo multi-robot simulator, version 11.10.2
+[gzserver-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[gzserver-1] Released under the Apache 2 License.
+[gzserver-1] http://gazebosim.org
+[gzserver-1] 
+[gzserver-1] [1;31m[Err] [Master.cc:96] [0m[1;31mEXCEPTION: [0m[1;31mUnable to start server[bind: Address already in use]. There is probably another Gazebo process running.
+[gzserver-1] [0m[1;31m
+[gzserver-1] [0m[1;31m[0m[1;31m[0m[1;31m[Err] [Master.cc:96] [0m[1;31mEXCEPTION: [0m[1;31mUnable to start server[bind: Address already in use]. There is probably another Gazebo process running.
+[gzserver-1] [0m[1;31m
+[ERROR] [gzserver-1]: process has died [pid 76690, exit code 255, cmd 'gzserver --verbose -s libgazebo_ros_init.so -s libgazebo_ros_factory.so /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_55/share/dual_robot_nav/worlds/fms_layout1.world'].
+[gzserver-1] [1;36m[0m[1;32m[0m
+[gzserver-1] [0m[1;31m[0m[1;31m[0m[1;33m[0m[1;31m[0m
+[gzclient-2] 
+[gzclient-2] (gzclient:76692): Gtk-WARNING **: 22:50:31.029: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+[SPAWN] Using URDF: /opt/ros/humble/share/turtlebot3_gazebo/urdf/turtlebot3_waffle_pi.urdf
+[SPAWN] Using Gazebo SDF: /opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi/model.sdf
+[SPAWN] Generated namespaced SDF for TB3_1: /tmp/dual_robot_nav_sdf/TB3_1.sdf
+[SPAWN] Generated namespaced SDF for TB3_2: /tmp/dual_robot_nav_sdf/TB3_2.sdf
+[INFO] [robot_state_publisher-3]: process started with pid [76890]
+[INFO] [spawn_entity.py-4]: process started with pid [76892]
+[robot_state_publisher-3] [INFO] [1780671042.611525971] [TB3_1.robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1780671042.611668384] [TB3_1.robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1780671042.611687719] [TB3_1.robot_state_publisher]: got segment base_scan
+[robot_state_publisher-3] [INFO] [1780671042.611699386] [TB3_1.robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1780671042.611709575] [TB3_1.robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-3] [INFO] [1780671042.611720030] [TB3_1.robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-3] [INFO] [1780671042.611730596] [TB3_1.robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-3] [INFO] [1780671042.611740451] [TB3_1.robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-3] [INFO] [1780671042.611750815] [TB3_1.robot_state_publisher]: got segment imu_link
+[robot_state_publisher-3] [INFO] [1780671042.611760648] [TB3_1.robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-3] [INFO] [1780671042.611770995] [TB3_1.robot_state_publisher]: got segment wheel_right_link
+[spawn_entity.py-4] [INFO] [1780671043.024051232] [TB3_1.spawn_tb3_1]: Spawn Entity started
+[spawn_entity.py-4] [INFO] [1780671043.024759619] [TB3_1.spawn_tb3_1]: Loading entity XML from file /tmp/dual_robot_nav_sdf/TB3_1.sdf
+[spawn_entity.py-4] [INFO] [1780671043.026268016] [TB3_1.spawn_tb3_1]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-4] [INFO] [1780671043.026939481] [TB3_1.spawn_tb3_1]: Waiting for service /spawn_entity
+[spawn_entity.py-4] [INFO] [1780671043.282772009] [TB3_1.spawn_tb3_1]: Calling service /spawn_entity
+[spawn_entity.py-4] [INFO] [1780671043.334029165] [TB3_1.spawn_tb3_1]: Spawn status: Entity [TB3_1] already exists.
+[spawn_entity.py-4] [ERROR] [1780671043.334594893] [TB3_1.spawn_tb3_1]: Spawn service failed. Exiting.
+[ERROR] [spawn_entity.py-4]: process has died [pid 76892, exit code 1, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -entity TB3_1 -robot_namespace TB3_1 -file /tmp/dual_robot_nav_sdf/TB3_1.sdf -x -1.0 -y -3.5 -z 0.01 -Y 1.57 -timeout 30 --ros-args -r __node:=spawn_tb3_1 -r __ns:=/TB3_1'].
+[INFO] [launch.user]: [SPAWN] TB3_1 done. Spawning TB3_2...
+[INFO] [robot_state_publisher-5]: process started with pid [76919]
+[INFO] [spawn_entity.py-6]: process started with pid [76921]
+[robot_state_publisher-5] [INFO] [1780671043.622513206] [TB3_2.robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-5] [INFO] [1780671043.622622117] [TB3_2.robot_state_publisher]: got segment base_link
+[robot_state_publisher-5] [INFO] [1780671043.622638030] [TB3_2.robot_state_publisher]: got segment base_scan
+[robot_state_publisher-5] [INFO] [1780671043.622648246] [TB3_2.robot_state_publisher]: got segment camera_link
+[robot_state_publisher-5] [INFO] [1780671043.622657201] [TB3_2.robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-5] [INFO] [1780671043.622666434] [TB3_2.robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-5] [INFO] [1780671043.622675324] [TB3_2.robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-5] [INFO] [1780671043.622683801] [TB3_2.robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-5] [INFO] [1780671043.622692425] [TB3_2.robot_state_publisher]: got segment imu_link
+[robot_state_publisher-5] [INFO] [1780671043.622700706] [TB3_2.robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-5] [INFO] [1780671043.622709133] [TB3_2.robot_state_publisher]: got segment wheel_right_link
+[spawn_entity.py-6] [INFO] [1780671044.045216991] [TB3_2.spawn_tb3_2]: Spawn Entity started
+[spawn_entity.py-6] [INFO] [1780671044.045698535] [TB3_2.spawn_tb3_2]: Loading entity XML from file /tmp/dual_robot_nav_sdf/TB3_2.sdf
+[spawn_entity.py-6] [INFO] [1780671044.046604125] [TB3_2.spawn_tb3_2]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-6] [INFO] [1780671044.046940853] [TB3_2.spawn_tb3_2]: Waiting for service /spawn_entity
+[spawn_entity.py-6] [INFO] [1780671044.052459762] [TB3_2.spawn_tb3_2]: Calling service /spawn_entity
+[spawn_entity.py-6] [INFO] [1780671044.089179612] [TB3_2.spawn_tb3_2]: Spawn status: Entity [TB3_2] already exists.
+[spawn_entity.py-6] [ERROR] [1780671044.089477568] [TB3_2.spawn_tb3_2]: Spawn service failed. Exiting.
+[ERROR] [spawn_entity.py-6]: process has died [pid 76921, exit code 1, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -entity TB3_2 -robot_namespace TB3_2 -file /tmp/dual_robot_nav_sdf/TB3_2.sdf -x 1.0 -y -3.5 -z 0.01 -Y 1.57 -timeout 30 --ros-args -r __node:=spawn_tb3_2 -r __ns:=/TB3_2'].
+[INFO] [map_server-7]: process started with pid [76953]
+[INFO] [amcl-8]: process started with pid [76955]
+[INFO] [lifecycle_manager-9]: process started with pid [76957]
+[INFO] [controller_server-10]: process started with pid [76959]
+[INFO] [smoother_server-11]: process started with pid [76961]
+[INFO] [planner_server-12]: process started with pid [76963]
+[INFO] [behavior_server-13]: process started with pid [76965]
+[INFO] [bt_navigator-14]: process started with pid [76967]
+[INFO] [waypoint_follower-15]: process started with pid [76969]
+[INFO] [velocity_smoother-16]: process started with pid [76971]
+[INFO] [lifecycle_manager-17]: process started with pid [76973]
+[INFO] [rviz2-18]: process started with pid [76975]
+[lifecycle_manager-9] [INFO] [1780671045.785355363] [TB3_1.lifecycle_manager_localization]: Creating
+[lifecycle_manager-9] [INFO] [1780671045.787927988] [TB3_1.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[behavior_server-13] [INFO] [1780671045.824191555] [TB3_1.behavior_server]: 
+[behavior_server-13] 	behavior_server lifecycle node launched. 
+[behavior_server-13] 	Waiting on external lifecycle transitions to activate
+[behavior_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1780671045.826946153] [TB3_1.planner_server]: 
+[planner_server-12] 	planner_server lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1780671045.831872623] [TB3_1.planner_server]: Creating
+[map_server-7] [INFO] [1780671045.837199513] [TB3_1.map_server]: 
+[map_server-7] 	map_server lifecycle node launched. 
+[map_server-7] 	Waiting on external lifecycle transitions to activate
+[map_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1780671045.840415721] [TB3_1.global_costmap.global_costmap]: 
+[planner_server-12] 	global_costmap lifecycle node launched. 
+[planner_server-12] 	Waiting on external lifecycle transitions to activate
+[planner_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-12] [INFO] [1780671045.841425521] [TB3_1.global_costmap.global_costmap]: Creating Costmap
+[map_server-7] [INFO] [1780671045.840931546] [TB3_1.map_server]: Creating
+[controller_server-10] [INFO] [1780671045.849167686] [TB3_1.controller_server]: 
+[controller_server-10] 	controller_server lifecycle node launched. 
+[controller_server-10] 	Waiting on external lifecycle transitions to activate
+[controller_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-17] [INFO] [1780671045.853083732] [TB3_1.lifecycle_manager_navigation]: Creating
+[lifecycle_manager-17] [INFO] [1780671045.859793271] [TB3_1.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[velocity_smoother-16] [INFO] [1780671045.867003794] [TB3_1.velocity_smoother]: 
+[velocity_smoother-16] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-16] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-16] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-10] [INFO] [1780671045.868728962] [TB3_1.controller_server]: Creating controller server
+[amcl-8] [INFO] [1780671045.870877664] [TB3_1.amcl]: 
+[amcl-8] 	amcl lifecycle node launched. 
+[amcl-8] 	Waiting on external lifecycle transitions to activate
+[amcl-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-8] [INFO] [1780671045.871799829] [TB3_1.amcl]: Creating
+[controller_server-10] [INFO] [1780671045.902292111] [TB3_1.local_costmap.local_costmap]: 
+[controller_server-10] 	local_costmap lifecycle node launched. 
+[controller_server-10] 	Waiting on external lifecycle transitions to activate
+[controller_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-10] [INFO] [1780671045.903884202] [TB3_1.local_costmap.local_costmap]: Creating Costmap
+[smoother_server-11] [INFO] [1780671045.908036384] [TB3_1.smoother_server]: 
+[smoother_server-11] 	smoother_server lifecycle node launched. 
+[smoother_server-11] 	Waiting on external lifecycle transitions to activate
+[smoother_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1780671045.910439751] [TB3_1.waypoint_follower]: 
+[waypoint_follower-15] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-15] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-15] [INFO] [1780671045.911048409] [TB3_1.waypoint_follower]: Creating
+[bt_navigator-14] [INFO] [1780671045.917265341] [TB3_1.bt_navigator]: 
+[bt_navigator-14] 	bt_navigator lifecycle node launched. 
+[bt_navigator-14] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-14] [INFO] [1780671045.918122642] [TB3_1.bt_navigator]: Creating
+[smoother_server-11] [INFO] [1780671045.920341074] [TB3_1.smoother_server]: Creating smoother server
+[lifecycle_manager-9] [INFO] [1780671045.994112298] [TB3_1.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-9] [INFO] [1780671045.994216345] [TB3_1.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[lifecycle_manager-9] [ERROR] [1780671046.075198494] [TB3_1.lifecycle_manager_localization]: Failed to change state for node: map_server
+[lifecycle_manager-9] [ERROR] [1780671046.076107400] [TB3_1.lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[map_server-7] [INFO] [1780671046.079450067] [TB3_1.map_server]: Configuring
+[map_server-7] [INFO] [1780671046.079597605] [map_io]: Loading yaml file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_55/share/dual_robot_nav/maps/fms_layout1.yaml
+[map_server-7] [INFO] [1780671046.080010399] [map_io]: resolution: 0.05
+[map_server-7] [INFO] [1780671046.080029363] [map_io]: origin[0]: -6.27
+[map_server-7] [INFO] [1780671046.080038436] [map_io]: origin[1]: -5.28
+[map_server-7] [INFO] [1780671046.080045951] [map_io]: origin[2]: 0
+[map_server-7] [INFO] [1780671046.080054108] [map_io]: free_thresh: 0.25
+[map_server-7] [INFO] [1780671046.080061969] [map_io]: occupied_thresh: 0.65
+[map_server-7] [INFO] [1780671046.080070589] [map_io]: mode: trinary
+[map_server-7] [INFO] [1780671046.080079724] [map_io]: negate: 0
+[map_server-7] [INFO] [1780671046.080386840] [map_io]: Loading image_file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_55/share/dual_robot_nav/maps/fms_layout1.pgm
+[map_server-7] [INFO] [1780671046.104849261] [map_io]: Read map /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_55/share/dual_robot_nav/maps/fms_layout1.pgm: 251 X 212 map @ 0.05 m/cell
+[rviz2-18] 
+[rviz2-18] (rviz2:76975): Gtk-WARNING **: 22:50:46.157: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+[lifecycle_manager-17] [INFO] [1780671046.159029567] [TB3_1.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-17] [INFO] [1780671046.159127819] [TB3_1.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-10] [INFO] [1780671046.160434465] [TB3_1.controller_server]: Configuring controller interface
+[controller_server-10] [INFO] [1780671046.161128791] [TB3_1.controller_server]: getting goal checker plugins..
+[controller_server-10] [INFO] [1780671046.161463393] [TB3_1.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-10] [INFO] [1780671046.161551273] [TB3_1.local_costmap.local_costmap]: Configuring
+[lifecycle_manager-17] [ERROR] [1780671046.168675354] [TB3_1.lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[lifecycle_manager-17] [ERROR] [1780671046.169114778] [TB3_1.lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[controller_server-10] [INFO] [1780671046.178463593] [TB3_1.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-10] [INFO] [1780671046.185412219] [TB3_1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-10] [INFO] [1780671046.208194963] [TB3_1.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-10] [INFO] [1780671046.209202970] [TB3_1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-10] [INFO] [1780671046.212166729] [TB3_1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-10] [INFO] [1780671046.220772869] [TB3_1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-10] [INFO] [1780671046.223739905] [TB3_1.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-10] [INFO] [1780671046.226467842] [TB3_1.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-10] [INFO] [1780671046.227478608] [TB3_1.controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-10] [INFO] [1780671046.246779221] [TB3_1.controller_server]: Controller Server has FollowPath  controllers available.
+[rviz2-18] [INFO] [1780671046.567299015] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-18] [INFO] [1780671046.567424964] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-18] [INFO] [1780671046.596682500] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-10] [INFO] [1780671046.905647467] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[rviz2-18] [INFO] [1780671048.887381677] [rviz2]: Trying to create a map of size 251 x 212 using 1 swatches
+[rviz2-18] [ERROR] [1780671048.911512130] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-18] active samplers with a different type refer to the same texture image unit
+[rviz2-18] [INFO] [1780671048.912709454] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[rviz2-18] [INFO] [1780671049.171321856] [rviz2]: Trying to create a map of size 251 x 212 using 1 swatches
+[INFO] [map_server-19]: process started with pid [77174]
+[INFO] [amcl-20]: process started with pid [77176]
+[INFO] [lifecycle_manager-21]: process started with pid [77187]
+[INFO] [controller_server-22]: process started with pid [77192]
+[INFO] [smoother_server-23]: process started with pid [77194]
+[INFO] [planner_server-24]: process started with pid [77202]
+[INFO] [behavior_server-25]: process started with pid [77205]
+[INFO] [bt_navigator-26]: process started with pid [77207]
+[INFO] [waypoint_follower-27]: process started with pid [77210]
+[INFO] [velocity_smoother-28]: process started with pid [77215]
+[INFO] [lifecycle_manager-29]: process started with pid [77231]
+[INFO] [rviz2-30]: process started with pid [77236]
+[map_server-19] [INFO] [1780671050.998412449] [TB3_2.map_server]: 
+[map_server-19] 	map_server lifecycle node launched. 
+[map_server-19] 	Waiting on external lifecycle transitions to activate
+[map_server-19] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-19] [INFO] [1780671050.998564152] [TB3_2.map_server]: Creating
+[amcl-20] [INFO] [1780671050.968193925] [TB3_2.amcl]: 
+[amcl-20] 	amcl lifecycle node launched. 
+[amcl-20] 	Waiting on external lifecycle transitions to activate
+[amcl-20] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-20] [INFO] [1780671050.969044082] [TB3_2.amcl]: Creating
+[controller_server-22] [INFO] [1780671051.023193068] [TB3_2.controller_server]: 
+[controller_server-22] 	controller_server lifecycle node launched. 
+[controller_server-22] 	Waiting on external lifecycle transitions to activate
+[controller_server-22] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-22] [INFO] [1780671051.027903936] [TB3_2.controller_server]: Creating controller server
+[controller_server-22] [INFO] [1780671051.036468850] [TB3_2.local_costmap.local_costmap]: 
+[controller_server-22] 	local_costmap lifecycle node launched. 
+[controller_server-22] 	Waiting on external lifecycle transitions to activate
+[controller_server-22] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-22] [INFO] [1780671051.037777756] [TB3_2.local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-21] [INFO] [1780671051.059314110] [TB3_2.lifecycle_manager_localization]: Creating
+[planner_server-24] [INFO] [1780671051.070080812] [TB3_2.planner_server]: 
+[planner_server-24] 	planner_server lifecycle node launched. 
+[planner_server-24] 	Waiting on external lifecycle transitions to activate
+[planner_server-24] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-24] [INFO] [1780671051.079199038] [TB3_2.planner_server]: Creating
+[planner_server-24] [INFO] [1780671051.090092257] [TB3_2.global_costmap.global_costmap]: 
+[planner_server-24] 	global_costmap lifecycle node launched. 
+[planner_server-24] 	Waiting on external lifecycle transitions to activate
+[planner_server-24] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-24] [INFO] [1780671051.090655693] [TB3_2.global_costmap.global_costmap]: Creating Costmap
+[waypoint_follower-27] [INFO] [1780671051.134585414] [TB3_2.waypoint_follower]: 
+[waypoint_follower-27] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-27] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-27] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-27] [INFO] [1780671051.135256707] [TB3_2.waypoint_follower]: Creating
+[lifecycle_manager-21] [INFO] [1780671051.147288913] [TB3_2.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[behavior_server-25] [INFO] [1780671051.150269355] [TB3_2.behavior_server]: 
+[behavior_server-25] 	behavior_server lifecycle node launched. 
+[behavior_server-25] 	Waiting on external lifecycle transitions to activate
+[behavior_server-25] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-29] [INFO] [1780671051.193765505] [TB3_2.lifecycle_manager_navigation]: Creating
+[lifecycle_manager-29] [INFO] [1780671051.208817212] [TB3_2.lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[velocity_smoother-28] [INFO] [1780671051.240386710] [TB3_2.velocity_smoother]: 
+[velocity_smoother-28] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-28] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-28] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-21] [INFO] [1780671051.261875771] [TB3_2.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-21] [INFO] [1780671051.261966728] [TB3_2.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[smoother_server-23] [INFO] [1780671051.278484719] [TB3_2.smoother_server]: 
+[smoother_server-23] 	smoother_server lifecycle node launched. 
+[smoother_server-23] 	Waiting on external lifecycle transitions to activate
+[smoother_server-23] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-23] [INFO] [1780671051.329818595] [TB3_2.smoother_server]: Creating smoother server
+[bt_navigator-26] [INFO] [1780671051.372847288] [TB3_2.bt_navigator]: 
+[bt_navigator-26] 	bt_navigator lifecycle node launched. 
+[bt_navigator-26] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-26] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-26] [INFO] [1780671051.373801296] [TB3_2.bt_navigator]: Creating
+[map_server-19] [INFO] [1780671051.411620161] [TB3_2.map_server]: Configuring
+[map_server-19] [INFO] [1780671051.412158341] [map_io]: Loading yaml file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_55/share/dual_robot_nav/maps/fms_layout1.yaml
+[map_server-19] [INFO] [1780671051.413504433] [map_io]: resolution: 0.05
+[map_server-19] [INFO] [1780671051.413538184] [map_io]: origin[0]: -6.27
+[map_server-19] [INFO] [1780671051.413543147] [map_io]: origin[1]: -5.28
+[map_server-19] [INFO] [1780671051.413547934] [map_io]: origin[2]: 0
+[map_server-19] [INFO] [1780671051.413552253] [map_io]: free_thresh: 0.25
+[map_server-19] [INFO] [1780671051.413557215] [map_io]: occupied_thresh: 0.65
+[map_server-19] [INFO] [1780671051.413563083] [map_io]: mode: trinary
+[map_server-19] [INFO] [1780671051.413569454] [map_io]: negate: 0
+[map_server-19] [INFO] [1780671051.413847098] [map_io]: Loading image_file: /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_55/share/dual_robot_nav/maps/fms_layout1.pgm
+[map_server-19] [INFO] [1780671051.420300504] [map_io]: Read map /home/anaskh007/dual_robot_ws/fyp_testing/results/params/dual_inflation_0_55/share/dual_robot_nav/maps/fms_layout1.pgm: 251 X 212 map @ 0.05 m/cell
+[lifecycle_manager-21] [INFO] [1780671051.432052870] [TB3_2.lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-20] [INFO] [1780671051.434387706] [TB3_2.amcl]: Configuring
+[amcl-20] [INFO] [1780671051.444210543] [TB3_2.amcl]: initTransforms
+[lifecycle_manager-21] [ERROR] [1780671051.457513557] [TB3_2.lifecycle_manager_localization]: Failed to change state for node: amcl
+[lifecycle_manager-21] [ERROR] [1780671051.460496130] [TB3_2.lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[amcl-20] [INFO] [1780671051.484189654] [TB3_2.amcl]: initPubSub
+[amcl-20] [INFO] [1780671051.498183249] [TB3_2.amcl]: Subscribed to map topic.
+[amcl-20] [INFO] [1780671051.526170579] [TB3_2.amcl]: Received a 251 X 212 map @ 0.050 m/pix
+[lifecycle_manager-29] [INFO] [1780671051.564189292] [TB3_2.lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-29] [INFO] [1780671051.565157075] [TB3_2.lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-22] [INFO] [1780671051.571099528] [TB3_2.controller_server]: Configuring controller interface
+[lifecycle_manager-29] [ERROR] [1780671051.574929100] [TB3_2.lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[lifecycle_manager-29] [ERROR] [1780671051.575046465] [TB3_2.lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[controller_server-22] [INFO] [1780671051.579325543] [TB3_2.controller_server]: getting goal checker plugins..
+[controller_server-22] [INFO] [1780671051.587467107] [TB3_2.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-22] [INFO] [1780671051.589741545] [TB3_2.local_costmap.local_costmap]: Configuring
+[rviz2-30] 
+[rviz2-30] (rviz2:77236): Gtk-WARNING **: 22:50:51.600: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+[controller_server-22] [INFO] [1780671051.617126094] [TB3_2.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-22] [INFO] [1780671051.626137593] [TB3_2.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-22] [INFO] [1780671051.647714674] [TB3_2.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-22] [INFO] [1780671051.647802687] [TB3_2.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-22] [INFO] [1780671051.651476746] [TB3_2.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-22] [INFO] [1780671051.683754188] [TB3_2.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-22] [INFO] [1780671051.688585040] [TB3_2.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-22] [INFO] [1780671051.692025362] [TB3_2.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-22] [INFO] [1780671051.694073100] [TB3_2.controller_server]: Created controller : FollowPath of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-22] [INFO] [1780671051.731610424] [TB3_2.controller_server]: Controller Server has FollowPath  controllers available.
+[rviz2-30] [INFO] [1780671052.081172652] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-30] [INFO] [1780671052.081380288] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-30] [INFO] [1780671052.137075431] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-22] [INFO] [1780671052.785309425] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780671052.786315718] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-22] [INFO] [1780671053.024884340] [TB3_2.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[rviz2-30] [INFO] [1780671054.816042638] [rviz2]: Trying to create a map of size 251 x 212 using 1 swatches
+[rviz2-30] [ERROR] [1780671054.840456900] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-30] active samplers with a different type refer to the same texture image unit
+[rviz2-30] [INFO] [1780671054.864893618] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[rviz2-30] [INFO] [1780671055.039854244] [rviz2]: Trying to create a map of size 251 x 212 using 1 swatches
+[INFO] [mission_controller-31]: process started with pid [77552]
+[mission_controller-31] [INFO] [1780671100.613801837] [mission_controller]: MissionController initializing...
+[mission_controller-31] [INFO] [1780671100.618364579] [mission_controller]: Action clients created for /TB3_1 and /TB3_2.
+[mission_controller-31] [INFO] [1780671103.618671347] [mission_controller]: Dispatching demo mission to both robots...
+[mission_controller-31] [INFO] [1780671103.619675081] [mission_controller]: [TB3_1] Sending goal → Loading Dock TB3_1  (x=-0.50, y=-3.50, yaw=1.57)
+[mission_controller-31] [INFO] [1780671103.620356171] [mission_controller]: [TB3_2] Sending goal → Loading Dock TB3_2  (x=0.50, y=-3.50, yaw=1.57)
+[controller_server-10] [INFO] [1780671103.642021606] [TB3_1.local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[mission_controller-31] [ERROR] [1780671103.660971722] [mission_controller]: [TB3_1] ✗ Goal 'Loading Dock TB3_1' ABORTED by Nav2.
+[mission_controller-31] [WARN] [1780671103.661177835] [mission_controller]: [TB3_1] Failed to reach Loading Dock.
+[mission_controller-31] [ERROR] [1780671103.661381038] [mission_controller]: [TB3_2] ✗ Goal 'Loading Dock TB3_2' ABORTED by Nav2.
+[mission_controller-31] [WARN] [1780671103.661420785] [mission_controller]: [TB3_2] Failed to reach Loading Dock.
+[INFO] [rviz2-18]: process has finished cleanly [pid 76975]
+[INFO] [rviz2-30]: process has finished cleanly [pid 77236]
+[INFO] [gzclient-2]: process has finished cleanly [pid 76692]
+[map_server-7] [WARN] [1780671206.847808761] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[map_server-7] [WARN] [1780671206.847839451] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[map_server-7] [ERROR] [1780671206.847852203] [TB3_1.map_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[amcl-8] [INFO] [1780671206.873050174] [TB3_1.amcl]: Configuring
+[amcl-8] [INFO] [1780671206.873289953] [TB3_1.amcl]: initTransforms
+[amcl-8] [INFO] [1780671206.884339735] [TB3_1.amcl]: initPubSub
+[amcl-8] [INFO] [1780671206.889102923] [TB3_1.amcl]: Subscribed to map topic.
+[map_server-7] [INFO] [1780671206.898880723] [TB3_1.map_server]: Activating
+[map_server-7] [INFO] [1780671206.899082684] [TB3_1.map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-8] [INFO] [1780671206.899425658] [TB3_1.amcl]: Received a 251 X 212 map @ 0.050 m/pix
+[controller_server-10] [WARN] [1780671206.936119848] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[controller_server-10] [WARN] [1780671206.936194280] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[controller_server-10] [ERROR] [1780671206.936213523] [TB3_1.controller_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[smoother_server-11] [INFO] [1780671206.947528865] [TB3_1.smoother_server]: Configuring smoother server
+[smoother_server-11] [INFO] [1780671206.970206747] [TB3_1.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-11] [INFO] [1780671206.972342884] [TB3_1.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[planner_server-12] [INFO] [1780671206.990503381] [TB3_1.planner_server]: Configuring
+[planner_server-12] [INFO] [1780671206.990841689] [TB3_1.global_costmap.global_costmap]: Configuring
+[planner_server-12] [INFO] [1780671207.004675285] [TB3_1.global_costmap.global_costmap]: Using plugin "static_layer"
+[amcl-8] [INFO] [1780671207.005645350] [TB3_1.amcl]: Activating
+[amcl-8] [INFO] [1780671207.006062537] [TB3_1.amcl]: initialPoseReceived
+[amcl-8] [INFO] [1780671207.006344485] [TB3_1.amcl]: Setting pose (235.900000): -1.000 -3.500 1.570
+[amcl-8] [INFO] [1780671207.007532118] [TB3_1.amcl]: Creating bond (amcl) to lifecycle manager.
+[planner_server-12] [INFO] [1780671207.014614833] [TB3_1.global_costmap.global_costmap]: Subscribing to the map topic (/TB3_1/map) with transient local durability
+[planner_server-12] [INFO] [1780671207.016282324] [TB3_1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-12] [INFO] [1780671207.016388046] [TB3_1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-12] [INFO] [1780671207.020407247] [TB3_1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-12] [INFO] [1780671207.032440174] [TB3_1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-12] [INFO] [1780671207.032530478] [TB3_1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-12] [INFO] [1780671207.039042908] [TB3_1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-12] [INFO] [1780671207.051054285] [TB3_1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 251 X 212 at 0.050000 m/pix
+[planner_server-12] [INFO] [1780671207.051322300] [TB3_1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-12] [INFO] [1780671207.051376399] [TB3_1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1780671207.052543146] [TB3_1.planner_server]: Planner Server has GridBased  planners available.
+[behavior_server-13] [INFO] [1780671207.064443415] [TB3_1.behavior_server]: Configuring
+[behavior_server-13] [INFO] [1780671207.075497512] [TB3_1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-13] [INFO] [1780671207.078130548] [TB3_1.behavior_server]: Configuring spin
+[behavior_server-13] [INFO] [1780671207.088962754] [TB3_1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-13] [INFO] [1780671207.089772696] [TB3_1.behavior_server]: Configuring backup
+[behavior_server-13] [INFO] [1780671207.103208084] [TB3_1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-13] [INFO] [1780671207.104334154] [TB3_1.behavior_server]: Configuring drive_on_heading
+[behavior_server-13] [INFO] [1780671207.115659169] [TB3_1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-13] [INFO] [1780671207.116921109] [TB3_1.behavior_server]: Configuring wait
+[behavior_server-13] [INFO] [1780671207.131598327] [TB3_1.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-13] [INFO] [1780671207.137441910] [TB3_1.behavior_server]: Configuring assisted_teleop
+[bt_navigator-14] [INFO] [1780671207.146274116] [TB3_1.bt_navigator]: Configuring
+[waypoint_follower-15] [INFO] [1780671207.287508876] [TB3_1.waypoint_follower]: Configuring
+[velocity_smoother-16] [INFO] [1780671207.305816207] [TB3_1.velocity_smoother]: Configuring velocity smoother
+[waypoint_follower-15] [INFO] [1780671207.316073951] [TB3_1.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[controller_server-10] [INFO] [1780671207.319367198] [TB3_1.controller_server]: Activating
+[controller_server-10] [INFO] [1780671207.319752332] [TB3_1.local_costmap.local_costmap]: Activating
+[controller_server-10] [INFO] [1780671207.319827069] [TB3_1.local_costmap.local_costmap]: Checking transform
+[controller_server-10] [INFO] [1780671207.320095134] [TB3_1.local_costmap.local_costmap]: start
+[controller_server-10] [INFO] [1780671207.521708407] [TB3_1.controller_server]: Activating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-10] [INFO] [1780671207.521846302] [TB3_1.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[smoother_server-11] [INFO] [1780671207.629089930] [TB3_1.smoother_server]: Activating
+[smoother_server-11] [INFO] [1780671207.629148625] [TB3_1.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[planner_server-12] [INFO] [1780671207.735424595] [TB3_1.planner_server]: Activating
+[planner_server-12] [INFO] [1780671207.735516882] [TB3_1.global_costmap.global_costmap]: Activating
+[planner_server-12] [INFO] [1780671207.735554435] [TB3_1.global_costmap.global_costmap]: Checking transform
+[planner_server-12] [INFO] [1780671207.735619999] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671208.235652980] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671208.735687435] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671209.235686803] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671209.735683554] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671210.235672994] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671210.735689849] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671211.235694149] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671211.735678498] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[map_server-19] [WARN] [1780671212.164219845] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[map_server-19] [WARN] [1780671212.164257698] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[map_server-19] [ERROR] [1780671212.164271272] [TB3_2.map_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[controller_server-22] [WARN] [1780671212.202130903] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[controller_server-22] [WARN] [1780671212.202157686] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[controller_server-22] [ERROR] [1780671212.202169033] [TB3_2.controller_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[smoother_server-23] [INFO] [1780671212.205657997] [TB3_2.smoother_server]: Configuring smoother server
+[smoother_server-23] [INFO] [1780671212.226726039] [TB3_2.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-23] [INFO] [1780671212.231958540] [TB3_2.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[planner_server-12] [INFO] [1780671212.236175693] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671212.255404245] [TB3_2.planner_server]: Configuring
+[planner_server-24] [INFO] [1780671212.256058727] [TB3_2.global_costmap.global_costmap]: Configuring
+[planner_server-24] [INFO] [1780671212.275171920] [TB3_2.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-24] [INFO] [1780671212.284422529] [TB3_2.global_costmap.global_costmap]: Subscribing to the map topic (/TB3_2/map) with transient local durability
+[planner_server-24] [INFO] [1780671212.285233149] [TB3_2.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-24] [INFO] [1780671212.285277300] [TB3_2.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-24] [INFO] [1780671212.288343449] [TB3_2.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-24] [INFO] [1780671212.301468177] [TB3_2.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-24] [INFO] [1780671212.304178111] [TB3_2.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-24] [INFO] [1780671212.318935328] [TB3_2.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-24] [INFO] [1780671212.348437004] [TB3_2.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-24] [INFO] [1780671212.348768305] [TB3_2.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-24] [INFO] [1780671212.350813868] [TB3_2.planner_server]: Planner Server has GridBased  planners available.
+[behavior_server-25] [INFO] [1780671212.374114103] [TB3_2.behavior_server]: Configuring
+[behavior_server-25] [INFO] [1780671212.385513942] [TB3_2.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-25] [INFO] [1780671212.387233265] [TB3_2.behavior_server]: Configuring spin
+[behavior_server-25] [INFO] [1780671212.411354331] [TB3_2.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-25] [INFO] [1780671212.412225051] [TB3_2.behavior_server]: Configuring backup
+[behavior_server-25] [INFO] [1780671212.428600624] [TB3_2.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-25] [INFO] [1780671212.433075671] [TB3_2.behavior_server]: Configuring drive_on_heading
+[behavior_server-25] [INFO] [1780671212.447315763] [TB3_2.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-25] [INFO] [1780671212.448969892] [TB3_2.behavior_server]: Configuring wait
+[behavior_server-25] [INFO] [1780671212.461707989] [TB3_2.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-25] [INFO] [1780671212.463987205] [TB3_2.behavior_server]: Configuring assisted_teleop
+[bt_navigator-26] [INFO] [1780671212.482496429] [TB3_2.bt_navigator]: Configuring
+[waypoint_follower-27] [INFO] [1780671212.669973028] [TB3_2.waypoint_follower]: Configuring
+[waypoint_follower-27] [INFO] [1780671212.699357125] [TB3_2.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[velocity_smoother-28] [INFO] [1780671212.708025464] [TB3_2.velocity_smoother]: Configuring velocity smoother
+[controller_server-22] [INFO] [1780671212.717031906] [TB3_2.controller_server]: Activating
+[controller_server-22] [INFO] [1780671212.717209333] [TB3_2.local_costmap.local_costmap]: Activating
+[controller_server-22] [INFO] [1780671212.717270391] [TB3_2.local_costmap.local_costmap]: Checking transform
+[controller_server-22] [INFO] [1780671212.717553774] [TB3_2.local_costmap.local_costmap]: start
+[planner_server-12] [INFO] [1780671212.735649613] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [INFO] [1780671212.920239647] [TB3_2.controller_server]: Activating controller: FollowPath of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[controller_server-22] [INFO] [1780671212.920348397] [TB3_2.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[smoother_server-23] [INFO] [1780671213.031852314] [TB3_2.smoother_server]: Activating
+[smoother_server-23] [INFO] [1780671213.032039121] [TB3_2.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[planner_server-24] [INFO] [1780671213.143957736] [TB3_2.planner_server]: Activating
+[planner_server-24] [INFO] [1780671213.144050835] [TB3_2.global_costmap.global_costmap]: Activating
+[planner_server-24] [INFO] [1780671213.144122595] [TB3_2.global_costmap.global_costmap]: Checking transform
+[planner_server-24] [INFO] [1780671213.144187505] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671213.235685642] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671213.644256335] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671213.735653601] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671214.144358634] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671214.235652908] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671214.644388690] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671214.735681748] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671215.144259334] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671215.235681459] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671215.644239562] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671215.735692503] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671216.144357249] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671216.235693326] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671216.644360822] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671216.735612264] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671217.144236003] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671217.235685290] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671217.644234002] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671217.735694185] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671218.144234449] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671218.235671342] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671218.644368848] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671218.735697639] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671219.144272335] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671219.235685223] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671219.644341595] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671219.735654157] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671220.144344820] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671220.235715374] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671220.644237170] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671220.735653139] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671221.144388462] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671221.235681311] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671221.644395331] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671221.735655225] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671222.144338711] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671222.235676901] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671222.644399225] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671222.735676975] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671223.144368131] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671223.235658422] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671223.644255997] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671223.735693439] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671224.144447882] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671224.235679492] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671224.644454093] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671224.735667458] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671225.144390352] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671225.235724701] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671225.644354525] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671225.735721067] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671226.144443639] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671226.235685544] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671226.644464747] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671226.735688657] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671227.144274039] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671227.235744773] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671227.644376843] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671227.735654146] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671228.144504787] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671228.235685866] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671228.644411859] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671228.735697643] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671229.144234606] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671229.235693897] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671229.644442853] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671229.735681148] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671230.144474408] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671230.235659445] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671230.644427243] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671230.735705025] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671231.144273268] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671231.235686154] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671231.644383740] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671231.735735100] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671232.144379398] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671232.235701959] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671232.644338291] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671232.735718016] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671233.144333694] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671233.235698526] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671233.644373644] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671233.735649689] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671234.144388948] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671234.240338922] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671234.644276877] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671234.735709375] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671235.144247584] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671235.235656302] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671235.644401502] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671235.735695655] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671236.144406994] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671236.235697013] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671236.644401568] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671236.735657627] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671237.144411829] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671237.235667084] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671237.644400398] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671237.735699938] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671238.144421155] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671238.235708391] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671238.644379033] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671238.735702483] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671239.144279790] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671239.235690564] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671239.644445288] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671239.735654383] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671240.144245880] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671240.235700177] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671240.644372855] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671240.735680376] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671241.144341078] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671241.235705236] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671241.644327172] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671241.735695791] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671242.144364292] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671242.235701538] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671242.644379185] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671242.735662132] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671243.144272762] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671243.235678372] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671243.644390149] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671243.735689049] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671244.144288452] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671244.235668498] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671244.644246762] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671244.735710162] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671245.144410920] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671245.235696343] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671245.644282926] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671245.735672530] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671246.144281705] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671246.235688323] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671246.644393262] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671246.735686372] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671247.144403575] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671247.235647771] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671247.644234442] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671247.735645011] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671248.144285592] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671248.235679300] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671248.644401917] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671248.735691533] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671249.144238080] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671249.235694455] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671249.644404681] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671249.735691673] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671250.144385493] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671250.235695682] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671250.644407935] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671250.735682643] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671251.144283945] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671251.235681155] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671251.644466395] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671251.735683501] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671252.144351677] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671252.235676674] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671252.644359827] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671252.735680040] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671253.144290419] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671253.235681121] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671253.644351888] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671253.735676948] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671254.144289369] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671254.235691429] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671254.644329134] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671254.735676747] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671255.144349782] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671255.235679906] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671255.644280030] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671255.735687712] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671256.144412326] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671256.235678809] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671256.644460404] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671256.735694442] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671257.144387458] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671257.235681823] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671257.644261618] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671257.735688746] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671258.144357931] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671258.235664285] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671258.644373979] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671258.735975355] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671259.144321002] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671259.235699243] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671259.644270533] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671259.735648043] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671260.144420075] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671260.235694936] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671260.644322741] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671260.735675953] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671261.144368787] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671261.235685620] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671261.644264245] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671261.735702063] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671262.144414023] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671262.235710722] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671262.644368944] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671262.735666472] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671263.144254257] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671263.235684025] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671263.644290599] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671263.735730657] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671264.144285562] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671264.235699006] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671264.644275271] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671264.735714232] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671265.144324027] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671265.235687513] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671265.644388437] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671265.735702427] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671266.144351242] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671266.235699024] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671266.644335357] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671266.735688581] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671267.144281058] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671267.235720445] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671267.644275956] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671267.735697793] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671268.144341214] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671268.235691790] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671268.644351685] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671268.735683615] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671269.144231209] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671269.235695047] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671269.644285833] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671269.735728945] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671270.144234587] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671270.235706475] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671270.644328285] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671270.735628153] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671271.144334611] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671271.235646025] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671271.644399916] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671271.735690531] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671272.144229052] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671272.235649674] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671272.644264818] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671272.735694506] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671273.144333377] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671273.235709495] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671273.644271299] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671273.735658145] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671274.144365449] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671274.235708176] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671274.644255208] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671274.735700816] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671275.144285796] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671275.235692376] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671275.644365215] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671275.735692500] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671276.144275387] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671276.235702345] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671276.644318332] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671276.735696149] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671277.144261953] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671277.235667554] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671277.644290141] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671277.735647871] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671278.144325600] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671278.235689292] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671278.644291003] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671278.735686028] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671279.144255628] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671279.235682404] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671279.644377129] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671279.735722746] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671280.144272581] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671280.235685886] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671280.644400692] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671280.735707803] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671281.144284483] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671281.235681107] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671281.644338379] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671281.735693072] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671282.144244523] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671282.235713924] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671282.644277398] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671282.735690322] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671283.144272718] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671283.235689011] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671283.644241563] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671283.735695613] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671284.144272341] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671284.235692897] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671284.644279253] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671284.735656576] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671285.144259059] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671285.235689134] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671285.644282822] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671285.735667314] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671286.144290908] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671286.235751990] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671286.644309801] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671286.735681820] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671287.144288612] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671287.235700568] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671287.644398710] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671287.735686250] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671288.144263526] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671288.235667538] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671288.644290201] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671288.735692626] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671289.144290332] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671289.235676618] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671289.644255818] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671289.735692357] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671290.144275434] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671290.235683263] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671290.644290002] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671290.735674629] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671291.144270241] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671291.235685848] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671291.644286591] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671291.735664481] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671292.144270475] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671292.235695860] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671292.644286551] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671292.735667019] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671293.144274974] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671293.235776787] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671293.644437111] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671293.735711123] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671294.144251725] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671294.235682654] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671294.644284665] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671294.735690536] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671295.144308035] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671295.235681081] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671295.644285564] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671295.735656328] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671296.144235574] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671296.235724347] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671296.644371551] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671296.735692900] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671297.144355833] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671297.235680580] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671297.644261553] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671297.735679985] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671298.144280067] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671298.235681957] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671298.644291921] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671298.735684192] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671299.144270364] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671299.235653575] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671299.644273939] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671299.735702701] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671300.144277280] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671300.235669612] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671300.644359687] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671300.735666554] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671301.144266038] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671301.235688091] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671301.644347472] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671301.735683039] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671302.144272201] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671302.235681374] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671302.644291171] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671302.735651270] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671303.144259440] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671303.235713918] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671303.644366257] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671303.735647937] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671304.144258986] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[bt_navigator-26] [WARN] [1780671304.146804694] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[planner_server-24] [WARN] [1780671304.146877210] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[planner_server-12] [WARN] [1780671304.146812820] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[controller_server-22] [WARN] [1780671304.146900508] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[smoother_server-11] [WARN] [1780671304.146916865] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[behavior_server-25] [WARN] [1780671304.147153805] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[controller_server-10] [WARN] [1780671304.147245076] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[behavior_server-13] [WARN] [1780671304.147276672] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[amcl-20] [WARN] [1780671304.147349298] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[amcl-8] [WARN] [1780671304.147525404] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[bt_navigator-14] [WARN] [1780671304.147548243] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[smoother_server-23] [WARN] [1780671304.147680463] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[planner_server-12] [INFO] [1780671304.235645276] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671304.551931697] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671304.553151719] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671304.644233423] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671304.735666964] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671304.856191831] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671304.857978932] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671305.144276472] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671305.153729743] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[controller_server-22] [ERROR] [1780671305.160985441] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-12] [INFO] [1780671305.235674732] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671305.454542782] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671305.457937645] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671305.644232081] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671305.735682547] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671305.855407266] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671305.858254875] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671306.144255236] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671306.159717900] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671306.162426954] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671306.235674881] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671306.463875494] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671306.466772496] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671306.644276961] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671306.735679371] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671306.768745676] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671306.867559383] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671307.144267062] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671307.169032719] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671307.171913856] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671307.235681663] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671307.473807122] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671307.475854737] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671307.644262832] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671307.735649274] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671307.777038138] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671307.875636254] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671308.144261638] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671308.178768147] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671308.179345312] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671308.235665185] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671308.474078674] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671308.484073758] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671308.644283970] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671308.735674897] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671308.779151555] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671308.883123809] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[controller_server-22] [ERROR] [1780671309.087652494] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-24] [INFO] [1780671309.144258641] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671309.187096278] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671309.235714380] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671309.393076096] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671309.493443297] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671309.644282369] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671309.688093428] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-12] [INFO] [1780671309.735753161] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671309.893196733] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[controller_server-22] [ERROR] [1780671309.992790114] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-24] [INFO] [1780671310.144271117] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671310.198497388] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671310.235670548] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671310.393852671] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671310.492751468] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671310.644266109] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671310.698082830] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-12] [INFO] [1780671310.735659219] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671310.902515708] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[controller_server-22] [ERROR] [1780671311.002187305] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-24] [INFO] [1780671311.144289365] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671311.206785695] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671311.235676829] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671311.402054499] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671311.502135957] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671311.644370323] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671311.706501144] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-12] [INFO] [1780671311.735672265] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671311.910835075] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[controller_server-22] [ERROR] [1780671312.011276273] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-24] [INFO] [1780671312.144261493] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671312.205738660] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671312.235693023] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671312.410328156] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671312.509550213] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671312.644268687] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671312.714443981] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-12] [INFO] [1780671312.735654584] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671312.813492432] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[controller_server-22] [ERROR] [1780671313.018887109] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-24] [INFO] [1780671313.144233808] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671313.214239585] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671313.235665695] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671313.419592313] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671313.519335576] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671313.644266794] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671313.724174074] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-12] [INFO] [1780671313.735674433] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671313.823774239] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[controller_server-22] [ERROR] [1780671314.018566683] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-24] [INFO] [1780671314.144286591] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671314.223675928] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-12] [INFO] [1780671314.235654624] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671314.439568521] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[controller_server-10] [ERROR] [1780671314.541338047] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671314.644234780] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [ERROR] [1780671314.733085658] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[planner_server-12] [INFO] [1780671314.735676378] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [ERROR] [1780671314.834010369] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_1/odom' and 'TB3_1/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-10] 
+[planner_server-24] [INFO] [1780671315.144234577] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671315.235660722] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[robot_state_publisher-3] [WARN] [1780671315.334181209] [TB3_1.robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[controller_server-22] [ERROR] [1780671315.462569029] [transformPoseInTargetFrame]: Connectivity Error looking up target frame: Could not find a connection between 'TB3_2/odom' and 'TB3_2/base_footprint' because they are not part of the same tree.Tf has two or more unconnected trees.
+[controller_server-22] 
+[amcl-8] [INFO] [1780671315.503257575] [TB3_1.amcl]: createLaserObject
+[planner_server-24] [INFO] [1780671315.644248967] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671315.735689472] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Lookup would require extrapolation at time 11.115000, but only time 11.941000 is in the buffer, when looking up transform from frame [TB3_1/base_footprint] to frame [map]
+[robot_state_publisher-5] [WARN] [1780671316.036866994] [TB3_2.robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[planner_server-24] [INFO] [1780671316.144236470] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671316.235663657] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 11.353000 but the earliest data is at time 11.941000, when looking up transform from frame [TB3_1/base_footprint] to frame [map]
+[controller_server-22] [INFO] [1780671316.266063041] [TB3_2.local_costmap.local_costmap]: Message Filter dropping message: frame 'TB3_2/base_scan' at time 11.139 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-24] [INFO] [1780671316.644242973] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671316.735693549] [TB3_1.global_costmap.global_costmap]: Timed out waiting for transform from TB3_1/base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 11.829000 but the earliest data is at time 11.941000, when looking up transform from frame [TB3_1/base_footprint] to frame [map]
+[amcl-20] [INFO] [1780671316.976924298] [TB3_2.amcl]: Message Filter dropping message: frame 'TB3_2/base_scan' at time 11.139 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-24] [INFO] [1780671317.144286199] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-12] [INFO] [1780671317.235708800] [TB3_1.global_costmap.global_costmap]: start
+[planner_server-24] [INFO] [1780671317.644375285] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-10] [WARN] [1780671318.036553630] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-10] [WARN] [1780671318.036596279] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-10] [ERROR] [1780671318.036604134] [TB3_1.controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[planner_server-24] [INFO] [1780671318.144249329] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[map_server-7] [WARN] [1780671318.154148963] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_server-7] [WARN] [1780671318.154203591] [rcl_lifecycle]: No transition matching 1 found for current state active
+[map_server-7] [ERROR] [1780671318.154210052] [TB3_1.map_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[planner_server-12] [INFO] [1780671318.287940476] [TB3_1.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-12] [INFO] [1780671318.292417628] [TB3_1.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[planner_server-24] [INFO] [1780671318.644346304] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671319.144323739] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671319.644276028] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671320.144262748] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671320.644248121] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671321.144241692] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671321.644261857] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671322.144269007] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671322.647090813] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-24] [INFO] [1780671323.146440359] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-22] [WARN] [1780671323.643951531] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-22] [WARN] [1780671323.644266714] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-22] [ERROR] [1780671323.644274581] [TB3_2.controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[planner_server-24] [INFO] [1780671323.644299733] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-20] [WARN] [1780671323.776255355] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[amcl-20] [WARN] [1780671323.776284732] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[amcl-20] [ERROR] [1780671323.776302780] [TB3_2.amcl]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[map_server-19] [INFO] [1780671323.788909310] [TB3_2.map_server]: Activating
+[map_server-19] [INFO] [1780671323.789188122] [TB3_2.map_server]: Creating bond (map_server) to lifecycle manager.
+[planner_server-24] [INFO] [1780671323.790419546] [TB3_2.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 251 X 212 at 0.050000 m/pix
+[amcl-20] [INFO] [1780671323.792467750] [TB3_2.amcl]: Received a 251 X 212 map @ 0.050 m/pix
+[amcl-20] [INFO] [1780671323.912555795] [TB3_2.amcl]: Activating
+[amcl-20] [INFO] [1780671323.913288974] [TB3_2.amcl]: initialPoseReceived
+[amcl-20] [INFO] [1780671323.914610915] [TB3_2.amcl]: Setting pose (18.100000): 1.000 -3.500 1.570
+[amcl-20] [INFO] [1780671323.918701485] [TB3_2.amcl]: Creating bond (amcl) to lifecycle manager.
+[amcl-20] [INFO] [1780671323.985725455] [TB3_2.amcl]: createLaserObject
+[amcl-20] [INFO] [1780671324.054619825] [TB3_2.amcl]: Received a 251 X 212 map @ 0.050 m/pix
+[planner_server-24] [INFO] [1780671324.144315708] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Lookup would require extrapolation at time 18.245000, but only time 19.147000 is in the buffer, when looking up transform from frame [TB3_2/base_footprint] to frame [map]
+[amcl-20] [INFO] [1780671324.216568405] [TB3_2.amcl]: createLaserObject
+[planner_server-24] [INFO] [1780671324.644346717] [TB3_2.global_costmap.global_costmap]: Timed out waiting for transform from TB3_2/base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 18.755000 but the earliest data is at time 19.147000, when looking up transform from frame [TB3_2/base_footprint] to frame [map]
+[planner_server-24] [INFO] [1780671325.144434322] [TB3_2.global_costmap.global_costmap]: start
+[planner_server-24] [INFO] [1780671326.148738159] [TB3_2.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-24] [INFO] [1780671326.153184774] [TB3_2.planner_server]: Creating bond (planner_server) to lifecycle manager.
+This event loop is already running

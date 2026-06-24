@@ -1,0 +1,34 @@
+[INFO] [launch]: All log files can be found below /home/anaskh007/.ros/log/2026-06-05-21-46-14-736094-anaskh007-ubuntu-56919
+[INFO] [launch]: Default logging verbosity is set to INFO
+urdf_file_name : turtlebot3_waffle_pi.urdf
+urdf_file_name : turtlebot3_waffle_pi.urdf
+[INFO] [gzserver-1]: process started with pid [56947]
+[INFO] [gzclient-2]: process started with pid [56949]
+[INFO] [robot_state_publisher-3]: process started with pid [56951]
+[robot_state_publisher-3] [INFO] [1780667175.299275847] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1780667175.299358984] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1780667175.299368626] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-3] [INFO] [1780667175.299376001] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1780667175.299384242] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-3] [INFO] [1780667175.299390795] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-3] [INFO] [1780667175.299395991] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-3] [INFO] [1780667175.299401566] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-3] [INFO] [1780667175.299407028] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-3] [INFO] [1780667175.299412156] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-3] [INFO] [1780667175.299418374] [robot_state_publisher]: got segment wheel_right_link
+[ERROR] [gzserver-1]: process has died [pid 56947, exit code 255, cmd 'gzserver /home/anaskh007/Anasros2_ws/install/single_robot_nav/share/single_robot_nav/worlds/fms_layout1.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so'].
+[gzclient-2] 
+[gzclient-2] (gzclient:56949): Gtk-WARNING **: 21:46:15.660: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+[INFO] [ros2-4]: process started with pid [57074]
+[ros2-4] [INFO] [1780667178.792413088] [spawn_entity]: Spawn Entity started
+[ros2-4] [INFO] [1780667178.792823796] [spawn_entity]: Loading entity XML from Gazebo Model Database
+[ros2-4] [INFO] [1780667178.793260304] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[ros2-4] [INFO] [1780667178.793558647] [spawn_entity]: Waiting for service /spawn_entity
+[ros2-4] [INFO] [1780667178.796740217] [spawn_entity]: Calling service /spawn_entity
+[ros2-4] [INFO] [1780667178.845849446] [spawn_entity]: Spawn status: Entity [turtlebot3] already exists.
+[ros2-4] [ERROR] [1780667178.846076057] [spawn_entity]: Spawn service failed. Exiting.
+[ros2-4] [ros2run]: Process exited with failure 1
+[ERROR] [ros2-4]: process has died [pid 57074, exit code 1, cmd 'ros2 run gazebo_ros spawn_entity.py -database turtlebot3_waffle_pi -entity turtlebot3 -x -1.0 -y -3.5 -z 0.01 -Y 1.57'].
+[robot_state_publisher-3] [INFO] [1780667282.829370182] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [gzclient-2]: process has finished cleanly [pid 56949]
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 56951]
