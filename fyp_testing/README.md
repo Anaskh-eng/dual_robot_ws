@@ -302,6 +302,53 @@ Thesis interpretation:
 - This does not prove physical hardware fault recovery; it proves software and
   communication isolation in the ROS2/DDS simulation.
 
+## RPP versus DWB Controller Comparison
+
+This experiment compares the existing Regulated Pure Pursuit controller against
+Nav2 DWB without editing the working source YAML files. Both temporary overlays
+use the same maps, missions, speed limit (`0.25 m/s`), and inflation radius
+(`0.40 m`). Both overlays also use the same `0.30 m` position tolerance and
+`1.0 s` controller failure tolerance. These benchmark-only settings prevent a
+controller from being classified as failed at a machine pose because of a few
+millimetres of costmap discretization; the installed working Nav2 YAML files
+are not modified.
+
+Run a one-repeat smoke test on Layout 1 first:
+
+```bash
+cd ~/dual_robot_ws/fyp_testing
+./scripts/run_controller_comparison.sh 1 1 240 gui
+```
+
+If both RPP and DWB complete, run the final comparison on Layouts 1 and 4:
+
+```bash
+./scripts/run_controller_comparison.sh 1,4 5 300 gui
+```
+
+Pilot/smoke-test runs are automatically replaced in the aggregate CSV when a
+new run uses the same layout, repeat, controller, and robot. Run the smoke test
+again after changing benchmark parameters before collecting the five final
+repeats.
+
+The runner alternates controller order between repeats and creates:
+
+```text
+results/csv/controller_comparison_runs.csv
+results/csv/controller_comparison_summary.csv
+results/csv/controller_comparison_statistics.csv
+results/plots/controller_rpp_vs_dwb.png
+```
+
+To regenerate the controller summaries without repeating simulations:
+
+```bash
+python3 scripts/aggregate_controller_comparison.py \
+  --master results/csv/navigation_metrics.csv \
+  --output-dir results/csv \
+  --plots-dir results/plots
+```
+
 ## Analyze An Existing Bag
 
 Dual:

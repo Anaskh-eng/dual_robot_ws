@@ -106,8 +106,6 @@ def read_bag(bag_path, mode):
         for robot in robot_topics
     }
     truth = defaultdict(list)
-    rosout_recovery_count = 0
-
     def mark_time(robot, stamp):
         item = metrics[robot]
         if item["first_stamp"] is None or stamp < item["first_stamp"]:
@@ -130,8 +128,19 @@ def read_bag(bag_path, mode):
 
         if topic == "/rosout":
             text = getattr(msg, "msg", "").lower()
-            if any(word in text for word in ("recover", "recovery", "spin", "backup", "back_up")):
-                rosout_recovery_count += 1
+            logger = getattr(msg, "name", "").lower().lstrip("/")
+            recovery_started = any(
+                marker in text
+                for marker in ("running spin", "running backup", "running back_up", "running wait")
+            )
+            if recovery_started:
+                if mode == "single":
+                    metrics["turtlebot3"]["recovery_count"] += 1
+                else:
+                    for robot in metrics:
+                        if logger.startswith(robot.lower() + "."):
+                            metrics[robot]["recovery_count"] += 1
+                            break
             continue
 
         if topic in ("/gazebo/model_states", "/model_states"):
@@ -164,9 +173,6 @@ def read_bag(bag_path, mode):
             elif topic == topics["plan"]:
                 metrics[robot]["plan_count"] += 1
                 mark_time(robot, stamp)
-
-    for robot in metrics:
-        metrics[robot]["recovery_count"] = rosout_recovery_count
 
     return metrics, truth
 
@@ -216,12 +222,27 @@ def build_rows(args, metrics, truth):
 
 def append_master_csv(output, rows):
     master = output.parent / "navigation_metrics.csv"
-    write_header = not master.exists()
-    with master.open("a", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
-        if write_header:
-            writer.writeheader()
-        writer.writerows(rows)
+    fieldnames = list(rows[0].keys())
+    existing = []
+    if master.exists():
+        with master.open(newline="") as handle:
+            existing = [
+                {field: row.get(field, "") for field in fieldnames}
+                for row in csv.DictReader(handle)
+            ]
+
+    replacements = {(row["run_id"], row["robot"]): row for row in rows}
+    merged = [
+        row for row in existing
+        if (row.get("run_id"), row.get("robot")) not in replacements
+    ]
+    merged.extend(rows)
+    temporary = master.with_suffix(master.suffix + ".tmp")
+    with temporary.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(merged)
+    temporary.replace(master)
 
 
 def main():

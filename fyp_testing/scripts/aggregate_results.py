@@ -161,7 +161,9 @@ def write_inflation(rows, output_dir):
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
-            if row["inflation_radius"] == "default":
+            try:
+                float(row["inflation_radius"])
+            except (TypeError, ValueError):
                 continue
             writer.writerow({name: row.get(name, "") for name in fieldnames})
 
